@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DataSourcePerFileMappings">
+    <file url="file://$PROJECT_DIR$/src/main/resources/com/easybbs/mappers/UserInfoBeautyMapper.xml" value="f2f62981-289f-4e9f-a4ca-2fab6d1917c7" />
+    <file url="file://$PROJECT_DIR$/src/main/resources/com/easybbs/mappers/UserInfoMapper.xml" value="f2f62981-289f-4e9f-a4ca-2fab6d1917c7" />
+  </component>
+</project>

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<configuration scan="true" scanPeriod="10 minutes">
+  <appender name="STDOUT" class="ch.qos.logback.core.ConsoleAppender">
+    <layout class="ch.qos.logback.classic.PatternLayout">
+      <pattern>%d{yyyy-MM-dd HH:mm:ss,GMT+8} %green([%thread]) %highlight(%-5level) %boldMagenta([%logger]) %cyan([%method]) %boldYellow(%line) - %msg%n</pattern>
+    </layout>
+  </appender>
+
+  <springProperty scope="context" name="log.path" source="project.folder"/>
+  <springProperty scope="context" name="log.root.level" source="log.root.level"/>
+
+  <property name="LOG_FOLDER" value="logs"/>
+  <property name="LOG_FILE_NAME" value="easychat.log"/>
+
+  <appender name="file" class="ch.qos.logback.core.rolling.RollingFileAppender">
+    <file>${log.path}/${LOG_FOLDER}/${LOG_FILE_NAME}</file>
+    <rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
+      <FileNamePattern>${log.path}/${LOG_FOLDER}/${LOG_FILE_NAME}.%d{yyyy-MM-dd}.%i.log</FileNamePattern>
+      <!-- <cleanHistoryOnStart>true</cleanHistoryOnStart> 该配置在当前Logback版本中不可用 -->
+      <TimeBasedFileNamingAndTriggeringPolicy class="ch.qos.logback.core.rolling.SizeAndTimeBasedFNATP">
+        <maxFileSize>20MB</maxFileSize>
+      </TimeBasedFileNamingAndTriggeringPolicy>
+      <maxHistory>30</maxHistory>
+    </rollingPolicy>
+    <encoder>
+      <pattern>%d{yyyy-MM-dd HH:mm:ss,GMT+8} [%thread] %-5level [%logger] [%method] %line - %msg%n</pattern>
+    </encoder>
+    <append>false</append>
+    <prudent>false</prudent>
+  </appender>
+
+  <logger name="org.springframework.boot.autoconfigure.logging.ConditionEvaluationReportLoggingListener"
+          level="error" />
+  <logger name="org.redisson.connection.DNSMonitor" level="error"/>
+  <logger name="com.zaxxer.hikari" level="info"/>
+  <logger name="io.lettuce.core" level="info"/>
+  <logger name="org.springframework.data.redis" level="info"/>
+  <root level="${log.root.level}">
+    <appender-ref ref="STDOUT"/>
+    <appender-ref ref="file"/>
+  </root>
+</configuration>
