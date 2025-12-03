@@ -36,7 +36,7 @@ public class UserInfo implements Serializable {
 	private Integer joinType;
 
 	/**
-	 * 
+	 * 0: 男 1:女
 	 */
 	private Integer sex;
 

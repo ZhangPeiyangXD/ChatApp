@@ -4,20 +4,20 @@ import java.util.Date;
 import java.util.List;
 
 
+import com.itzpy.constant.Constants;
 import com.itzpy.entity.config.AppConfig;
 import com.itzpy.entity.dto.TokenUserInfoDto;
-import com.itzpy.entity.enums.BeautyAccountStatusEnum;
-import com.itzpy.entity.enums.UserContactTypeEnum;
-import com.itzpy.entity.enums.UserStatusEnum;
+import com.itzpy.entity.enums.*;
 import com.itzpy.entity.po.UserInfoBeauty;
+import com.itzpy.entity.vo.UserInfoVo;
 import com.itzpy.exception.BusinessException;
 import com.itzpy.mappers.UserInfoBeautyMapper;
-import org.apache.commons.codec.digest.DigestUtils;
+import com.itzpy.redis.RedisComponent;
+import com.itzpy.utils.CopyTools;
 import org.apache.commons.lang3.ArrayUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import com.itzpy.entity.enums.PageSize;
 import com.itzpy.entity.query.UserInfoQuery;
 import com.itzpy.entity.po.UserInfo;
 import com.itzpy.entity.vo.PaginationResultVO;
@@ -25,6 +25,7 @@ import com.itzpy.entity.query.SimplePage;
 import com.itzpy.mappers.UserInfoMapper;
 import com.itzpy.service.UserInfoService;
 import com.itzpy.utils.StringTools;
+import org.springframework.transaction.annotation.Transactional;
 
 
 /**
@@ -39,6 +40,8 @@ public class UserInfoServiceImpl implements UserInfoService {
     private UserInfoBeautyMapper<UserInfoBeauty, UserInfoQuery> userInfoBeautyMapper;
     @Autowired
     private AppConfig appConfig;
+    @Autowired
+    private RedisComponent redisComponent;
 
 	/**
 	 * 根据条件查询列表
@@ -167,6 +170,7 @@ public class UserInfoServiceImpl implements UserInfoService {
 		return this.userInfoMapper.deleteByEmail(email);
 	}
 
+
     /**
      * 用户注册方法
      * 实现用户注册的核心业务逻辑，包括邮箱唯一性校验、靓号检查、用户信息创建等步骤
@@ -177,6 +181,7 @@ public class UserInfoServiceImpl implements UserInfoService {
      * @throws BusinessException 当用户邮箱已存在时抛出"用户已存在"异常
      */
     @Override
+    @Transactional(rollbackFor = Exception.class)
     public void register(String email, String nickName, String password) {
         // 检查用户邮箱是否已存在
         UserInfo userInfo = userInfoMapper.selectByEmail(email);
@@ -208,18 +213,17 @@ public class UserInfoServiceImpl implements UserInfoService {
         userInfo.setUserId(userId);
         userInfo.setEmail(email);
         userInfo.setNickname(nickName);
-        // 对密码进行MD5加密存储
         userInfo.setPassword(StringTools.encodeMd5( password));
         userInfo.setCreateTime(curDate);
-        // 默认启用状态
         userInfo.setStatus(UserStatusEnum.ENABLE.getStatus());
         userInfo.setLastOffTime(curDate.getTime());
+        userInfo.setJoinType(JoinTypeEnum.APPLY.getType());
 
-        // 插入用户信息到数据库
         this.userInfoMapper.insert(userInfo);
 
         //TODO: 创建机器人好友
     }
+
 
     /**
      * 用户登录验证方法
@@ -231,8 +235,7 @@ public class UserInfoServiceImpl implements UserInfoService {
      * @throws BusinessException 当用户不存在、密码错误或用户被禁用时抛出相应异常
      */
     @Override
-    public TokenUserInfoDto login(String email, String password) {
-        // 根据邮箱查找用户信息
+    public UserInfoVo login(String email, String password) {
         UserInfo userInfo = userInfoMapper.selectByEmail(email);
         
         if (userInfo == null) {
@@ -255,16 +258,34 @@ public class UserInfoServiceImpl implements UserInfoService {
         if (!userInfo.getPassword().equals(password)) {
             throw new BusinessException("密码错误");
         }
-        
-        // 检查用户是否被禁用
+
         if(UserStatusEnum.DISABLE.getStatus().equals(userInfo.getStatus())){
             throw new BusinessException("用户被禁用");
         }
 
-        // 构造并返回用户信息DTO
+        //TODO 查询我的群组
+
+        //TODO 查询我的联系人
         TokenUserInfoDto tokenUserInfoDto = getTokenUserInfoDto(userInfo);
-        return tokenUserInfoDto;
+
+        Long lastHeartbeat = redisComponent.getUserHeartbeat(userInfo.getUserId());
+        if(lastHeartbeat != null){
+            throw new BusinessException("用户已在别处登录,请退出再登陆");
+        }
+
+        // 模拟jwt，自己生成一个32位Token, 用户ID + 随机字符串。存储tokenUserInfo到redis中
+        String token = StringTools.encodeMd5(userInfo.getUserId() + StringTools.getRandomString(Constants.LENGTH_20));
+        tokenUserInfoDto.setToken(token);
+        redisComponent.saveTokenUSerInfoDto(tokenUserInfoDto);
+
+        // 封装Vo
+        UserInfoVo userInfoVo = CopyTools.copy(userInfo, UserInfoVo.class);
+        userInfoVo.setToken(tokenUserInfoDto.getToken());
+        userInfoVo.setAdmin(tokenUserInfoDto.isAdmin());
+
+        return userInfoVo;
     }
+
 
     /**
      * 根据用户信息生成Token用户信息DTO。

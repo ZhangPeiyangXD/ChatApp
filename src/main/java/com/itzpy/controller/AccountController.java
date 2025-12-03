@@ -3,13 +3,20 @@ package com.itzpy.controller;
 
 import com.itzpy.constant.Constants;
 import com.itzpy.entity.dto.TokenUserInfoDto;
+import com.itzpy.entity.enums.BeautyAccountStatusEnum;
+import com.itzpy.entity.enums.JoinTypeEnum;
+import com.itzpy.entity.po.UserInfo;
 import com.itzpy.entity.vo.ResponseVO;
+import com.itzpy.entity.vo.UserInfoVo;
 import com.itzpy.exception.BusinessException;
+import com.itzpy.redis.RedisComponent;
 import com.itzpy.redis.RedisUtils;
 import com.itzpy.service.UserInfoService;
+import com.itzpy.utils.CopyTools;
 import com.wf.captcha.ArithmeticCaptcha;
 import jdk.nashorn.internal.runtime.logging.Logger;
 import org.slf4j.LoggerFactory;
+import org.springframework.beans.BeanUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.validation.annotation.Validated;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -33,7 +40,8 @@ public class AccountController extends ABaseController {
     private RedisUtils redisUtils;
     @Autowired
     private UserInfoService userInfoService;
-
+    @Autowired
+    private RedisComponent redisComponent;
 
     /**
      * 获取算术验证码图片
@@ -118,11 +126,24 @@ public class AccountController extends ABaseController {
                 throw new BusinessException("图片验证码错误");
             }
 
-            TokenUserInfoDto tokenUserInfoDto = userInfoService.login(email, password);
+            //获取并返回vo给前端。
+            UserInfoVo userInfoVo = userInfoService.login(email, password);
 
-            return getSuccessResponseVO(tokenUserInfoDto);
+            return getSuccessResponseVO(userInfoVo);
         } finally {
             redisUtils.delete(Constants.REDIS_KEY_CHECK_CODE + checkCodeKey);
         }
+    }
+
+
+    /**
+     * 获取系统设置信息接口。
+     * 获取系统设置信息（SysSettingDto中的信息），并返回给前端。
+     *
+     * @return ResponseVO  系统设置信息的响应对象
+     */
+    @RequestMapping("/getSysSetting")
+    public ResponseVO getSysSetting() {
+        return getSuccessResponseVO(redisComponent.getSysSetting());
     }
 }

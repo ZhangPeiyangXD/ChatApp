@@ -6,6 +6,7 @@ import com.itzpy.entity.dto.TokenUserInfoDto;
 import com.itzpy.entity.query.UserInfoQuery;
 import com.itzpy.entity.po.UserInfo;
 import com.itzpy.entity.vo.PaginationResultVO;
+import com.itzpy.entity.vo.UserInfoVo;
 import com.itzpy.exception.BusinessException;
 
 import javax.validation.constraints.Email;
@@ -114,5 +115,5 @@ public interface UserInfoService {
      * @return TokenUserInfoDto 包含用户基本信息和权限标识的DTO对象
      * @throws BusinessException 当用户不存在、密码错误或用户被禁用时抛出相应异常
      */
-    TokenUserInfoDto login(String email, String password);
+    UserInfoVo login(String email, String password);
 }
