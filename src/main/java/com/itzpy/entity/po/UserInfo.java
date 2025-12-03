@@ -58,7 +58,7 @@ public class UserInfo implements Serializable {
 	/**
 	 * 
 	 */
-	private String createTime;
+	private Date createTime;
 
 	/**
 	 * 
@@ -147,11 +147,11 @@ public class UserInfo implements Serializable {
 		return this.status;
 	}
 
-	public void setCreateTime(String createTime){
+	public void setCreateTime(Date createTime){
 		this.createTime = createTime;
 	}
 
-	public String getCreateTime(){
+	public Date getCreateTime(){
 		return this.createTime;
 	}
 

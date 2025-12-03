@@ -18,12 +18,11 @@
 
 	<!-- 通用查询结果列-->
 	<sql id="base_column_list">
-    SELECT u.id,
+           u.id,
            u.user_id,
            u.email,
            u.status
-    FROM user_info_beauty u
-  </sql>
+	</sql>
 
 	<sql id="base_condition_filed">
 			<if test="query.id != null">

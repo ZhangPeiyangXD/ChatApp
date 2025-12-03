@@ -36,20 +36,19 @@
 
   <!-- 通用查询结果列-->
   <sql id="base_column_list">
-    SELECT u.user_id,
-           u.email,
-           u.nickname,
-           u.join_type,
-           u.sex,
-           u.password,
-           u.personal_signature,
-           u.status,
-           u.create_time,
-           u.last_login_time,
-           u.area_name,
-           u.area_code,
-           u.last_off_time
-    FROM user_info u
+    u.user_id,
+    u.email,
+    u.nickname,
+    u.join_type,
+    u.sex,
+    u.password,
+    u.personal_signature,
+    u.status,
+    u.create_time,
+    u.last_login_time,
+    u.area_name,
+    u.area_code,
+    u.last_off_time
   </sql>
 
   <sql id="base_condition_filed">

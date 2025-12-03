@@ -1,5 +1,11 @@
 package com.itzpy.utils;
+import com.itzpy.constant.Constants;
+import com.itzpy.entity.enums.UserContactTypeEnum;
 import com.itzpy.exception.BusinessException;
+import jodd.util.RandomString;
+import org.apache.commons.codec.digest.DigestUtils;
+import org.apache.commons.lang3.RandomStringUtils;
+
 import java.lang.reflect.Field;
 import java.lang.reflect.Method;
 
@@ -50,4 +56,20 @@ public class StringTools {
         }
         return false;
     }
+
+    public static String getUserId(){
+        return UserContactTypeEnum.USER.getPrefix() + getRandomNumber(Constants.LENGTH_11);
+    }
+
+    public static String getRandomNumber(Integer count){
+        return RandomStringUtils.random(count, false, true);
+    }
+
+    public static String getRandomString(Integer count){
+        return RandomStringUtils.random(count, true, false);
+    }
+
+   public static final String encodeMd5(String str){
+        return StringTools.isEmpty( str)? null: DigestUtils.md5Hex(str);
+   }
 }

@@ -2,7 +2,7 @@
 <configuration scan="true" scanPeriod="10 minutes">
   <appender name="STDOUT" class="ch.qos.logback.core.ConsoleAppender">
     <layout class="ch.qos.logback.classic.PatternLayout">
-      <pattern>%d{yyyy-MM-dd HH:mm:ss,GMT+8} %green([%thread]) %highlight(%-5level) %boldMagenta([%logger]) %cyan([%method]) %boldYellow(%line) - %msg%n</pattern>
+      <pattern>%d{yyyy-MM-dd HH:mm:ss,GMT+8} %green([%15.15thread]) %highlight(%-5level) %boldMagenta([%-40.40logger]) %cyan([%15.15method]) %boldYellow(%line) - %msg%n</pattern>
     </layout>
   </appender>
 
@@ -23,7 +23,7 @@
       <maxHistory>30</maxHistory>
     </rollingPolicy>
     <encoder>
-      <pattern>%d{yyyy-MM-dd HH:mm:ss,GMT+8} [%thread] %-5level [%logger] [%method] %line - %msg%n</pattern>
+      <pattern>%d{yyyy-MM-dd HH:mm:ss,GMT+8} [%15.15thread] %-5level [%-40.40logger] [%15.15method] %line - %msg%n</pattern>
     </encoder>
     <append>false</append>
     <prudent>false</prudent>

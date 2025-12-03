@@ -2,9 +2,14 @@ package com.itzpy.service;
 
 import java.util.List;
 
+import com.itzpy.entity.dto.TokenUserInfoDto;
 import com.itzpy.entity.query.UserInfoQuery;
 import com.itzpy.entity.po.UserInfo;
 import com.itzpy.entity.vo.PaginationResultVO;
+import com.itzpy.exception.BusinessException;
+
+import javax.validation.constraints.Email;
+import javax.validation.constraints.NotEmpty;
 
 
 /**
@@ -87,4 +92,27 @@ public interface UserInfoService {
 	 */
 	Integer deleteUserInfoByEmail(String email);
 
+
+    /**
+     * 用户注册方法
+     * 实现用户注册的核心业务逻辑，包括邮箱唯一性校验、靓号检查、用户信息创建等步骤
+     *
+     * @param email 用户邮箱，用于登录和接收系统通知，需保证唯一性
+     * @param nickName 用户昵称，用于展示和识别用户身份
+     * @param password 用户密码，将以MD5加密形式存储在数据库中
+     * @throws BusinessException 当用户邮箱已存在时抛出"用户已存在"异常
+     */
+    void register(String email, String nickName, String password);
+
+
+    /**
+     * 用户登录验证方法
+     * 根据用户邮箱和密码进行身份验证，验证成功后返回用户信息DTO
+     *
+     * @param email 用户邮箱
+     * @param password 用户密码（已MD5加密）
+     * @return TokenUserInfoDto 包含用户基本信息和权限标识的DTO对象
+     * @throws BusinessException 当用户不存在、密码错误或用户被禁用时抛出相应异常
+     */
+    TokenUserInfoDto login(String email, String password);
 }

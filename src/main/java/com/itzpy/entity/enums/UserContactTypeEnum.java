@@ -1,0 +1,62 @@
+package com.itzpy.entity.enums;
+
+import com.itzpy.utils.StringTools;
+
+public enum UserContactTypeEnum {
+    USER(0,"U","好友"),
+    GROUP(1,"G","群");
+
+    private Integer code;
+    private String prefix;
+    private String desc;
+
+    UserContactTypeEnum(Integer code, String prefix, String desc) {
+        this.code = code;
+        this.prefix = prefix;
+        this.desc = desc;
+    }
+
+    public Integer getCode() {
+        return code;
+    }
+
+    public String getPrefix() {
+        return prefix;
+    }
+
+    public String getDesc() {
+        return desc;
+    }
+
+    public static UserContactTypeEnum getByName(String name) {
+        try{
+            if(StringTools.isEmpty( name)){
+                return null;
+            }
+
+            return UserContactTypeEnum.valueOf(name.toUpperCase());
+        }catch (Exception e){
+            return null;
+        }
+    }
+
+    public static UserContactTypeEnum getByPrefix(String prefix) {
+        try{
+            if(StringTools.isEmpty( prefix)|| prefix.length() == 0){
+                return null;
+            }
+
+            prefix = prefix.substring(0,1);
+
+            for(UserContactTypeEnum typeEnum : UserContactTypeEnum.values()){
+                if(typeEnum.getPrefix().equals(prefix)){
+                    return typeEnum;
+                }
+            }
+
+            return null;
+        }catch (Exception e){
+            return null;
+        }
+    }
+}

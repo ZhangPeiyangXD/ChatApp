@@ -1,9 +1,20 @@
 package com.itzpy.service.impl;
 
+import java.util.Date;
 import java.util.List;
 
-import javax.annotation.Resource;
 
+import com.itzpy.entity.config.AppConfig;
+import com.itzpy.entity.dto.TokenUserInfoDto;
+import com.itzpy.entity.enums.BeautyAccountStatusEnum;
+import com.itzpy.entity.enums.UserContactTypeEnum;
+import com.itzpy.entity.enums.UserStatusEnum;
+import com.itzpy.entity.po.UserInfoBeauty;
+import com.itzpy.exception.BusinessException;
+import com.itzpy.mappers.UserInfoBeautyMapper;
+import org.apache.commons.codec.digest.DigestUtils;
+import org.apache.commons.lang3.ArrayUtils;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import com.itzpy.entity.enums.PageSize;
@@ -22,8 +33,12 @@ import com.itzpy.utils.StringTools;
 @Service("userInfoService")
 public class UserInfoServiceImpl implements UserInfoService {
 
-	@Resource
+	@Autowired
 	private UserInfoMapper<UserInfo, UserInfoQuery> userInfoMapper;
+    @Autowired
+    private UserInfoBeautyMapper<UserInfoBeauty, UserInfoQuery> userInfoBeautyMapper;
+    @Autowired
+    private AppConfig appConfig;
 
 	/**
 	 * 根据条件查询列表
@@ -151,4 +166,126 @@ public class UserInfoServiceImpl implements UserInfoService {
 	public Integer deleteUserInfoByEmail(String email) {
 		return this.userInfoMapper.deleteByEmail(email);
 	}
+
+    /**
+     * 用户注册方法
+     * 实现用户注册的核心业务逻辑，包括邮箱唯一性校验、靓号检查、用户信息创建等步骤
+     * 
+     * @param email 用户邮箱，用于登录和接收系统通知，需保证唯一性
+     * @param nickName 用户昵称，用于展示和识别用户身份
+     * @param password 用户密码，将以MD5加密形式存储在数据库中
+     * @throws BusinessException 当用户邮箱已存在时抛出"用户已存在"异常
+     */
+    @Override
+    public void register(String email, String nickName, String password) {
+        // 检查用户邮箱是否已存在
+        UserInfo userInfo = userInfoMapper.selectByEmail(email);
+
+        if (userInfo != null) {
+            throw new BusinessException("用户已存在");
+        }
+
+        //生成用户ID
+        String userId = StringTools.getUserId();
+
+        //判断该邮箱是否有靓号权益，如果有则使用靓号，否则用刚才的随机用户ID
+        UserInfoBeauty beautyAccount = this.userInfoBeautyMapper.selectByEmail(email);
+        Boolean useBeautyAccount = null != beautyAccount && BeautyAccountStatusEnum.NO_USE.getStatus().equals(beautyAccount.getStatus());
+
+        if(useBeautyAccount){
+            // 使用靓号作为用户ID
+            userId = UserContactTypeEnum.USER.getPrefix() + beautyAccount.getUserId();
+            // 更新靓号状态为已使用
+            UserInfoBeauty updateBeauty = new UserInfoBeauty();
+            updateBeauty.setStatus(BeautyAccountStatusEnum.USED.getStatus());
+            this.userInfoBeautyMapper.updateById(updateBeauty, beautyAccount.getId());
+        }
+
+        // 构造用户信息对象
+        userInfo = new UserInfo();
+        Date curDate = new Date();
+
+        userInfo.setUserId(userId);
+        userInfo.setEmail(email);
+        userInfo.setNickname(nickName);
+        // 对密码进行MD5加密存储
+        userInfo.setPassword(StringTools.encodeMd5( password));
+        userInfo.setCreateTime(curDate);
+        // 默认启用状态
+        userInfo.setStatus(UserStatusEnum.ENABLE.getStatus());
+        userInfo.setLastOffTime(curDate.getTime());
+
+        // 插入用户信息到数据库
+        this.userInfoMapper.insert(userInfo);
+
+        //TODO: 创建机器人好友
+    }
+
+    /**
+     * 用户登录验证方法
+     * 根据用户邮箱和密码进行身份验证，验证成功后返回用户信息DTO
+     * 
+     * @param email 用户邮箱
+     * @param password 用户密码（已MD5加密）
+     * @return TokenUserInfoDto 包含用户基本信息和权限标识的DTO对象
+     * @throws BusinessException 当用户不存在、密码错误或用户被禁用时抛出相应异常
+     */
+    @Override
+    public TokenUserInfoDto login(String email, String password) {
+        // 根据邮箱查找用户信息
+        UserInfo userInfo = userInfoMapper.selectByEmail(email);
+        
+        if (userInfo == null) {
+            throw new BusinessException("用户不存在");
+        }
+
+        /* 检查密码是否已经为MD5格式（32位十六进制字符串）
+        boolean isMd5Format = password.matches("^[a-fA-F0-9]{32}$");
+        String encodedPassword;
+
+        if (isMd5Format) {
+            // 如果前端已经传入MD5加密的密码，则直接使用
+            encodedPassword = password;
+        } else {
+            // 如果前端传入的是明文密码，则进行MD5加密
+            encodedPassword = StringTools.encodeMd5(password);
+        }*/
+
+        // 经过调试，发现前端发来的是MD5加密过后的密码
+        if (!userInfo.getPassword().equals(password)) {
+            throw new BusinessException("密码错误");
+        }
+        
+        // 检查用户是否被禁用
+        if(UserStatusEnum.DISABLE.getStatus().equals(userInfo.getStatus())){
+            throw new BusinessException("用户被禁用");
+        }
+
+        // 构造并返回用户信息DTO
+        TokenUserInfoDto tokenUserInfoDto = getTokenUserInfoDto(userInfo);
+        return tokenUserInfoDto;
+    }
+
+    /**
+     * 根据用户信息生成Token用户信息DTO。
+     * 该方法会判断用户是否为管理员，并相应设置admin标志位。
+     * 
+     * @param userInfoDto 用户信息实体
+     * @return 包含用户ID、昵称和管理员标识的Token用户信息DTO
+     */
+    private TokenUserInfoDto getTokenUserInfoDto(UserInfo userInfoDto){
+        TokenUserInfoDto tokenUserInfoDto = new TokenUserInfoDto();
+
+        tokenUserInfoDto.setUserId(userInfoDto.getUserId());
+        tokenUserInfoDto.setNickName(userInfoDto.getNickname());
+
+        String adminEmails = appConfig.getAdminEmails();
+        if(!StringTools.isEmpty(adminEmails) && ArrayUtils.contains(adminEmails.split(","), userInfoDto.getEmail())){
+            tokenUserInfoDto.setAdmin(true);
+        }else{
+            tokenUserInfoDto.setAdmin(false);
+        }
+
+        return tokenUserInfoDto;
+    }
 }
