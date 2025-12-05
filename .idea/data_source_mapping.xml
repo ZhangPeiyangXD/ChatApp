@@ -1,6 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="DataSourcePerFileMappings">
+    <file url="file://$APPLICATION_CONFIG_DIR$/consoles/db/f2f62981-289f-4e9f-a4ca-2fab6d1917c7/console.sql" value="f2f62981-289f-4e9f-a4ca-2fab6d1917c7" />
+    <file url="file://$PROJECT_DIR$/src/main/resources/com/itzpy/mappers/GroupInfoMapper.xml" value="f2f62981-289f-4e9f-a4ca-2fab6d1917c7" />
+    <file url="file://$PROJECT_DIR$/src/main/resources/com/itzpy/mappers/UserContactApplyMapper.xml" value="f2f62981-289f-4e9f-a4ca-2fab6d1917c7" />
+    <file url="file://$PROJECT_DIR$/src/main/resources/com/itzpy/mappers/UserContactMapper.xml" value="f2f62981-289f-4e9f-a4ca-2fab6d1917c7" />
     <file url="file://$PROJECT_DIR$/src/main/resources/com/itzpy/mappers/UserInfoBeautyMapper.xml" value="f2f62981-289f-4e9f-a4ca-2fab6d1917c7" />
     <file url="file://$PROJECT_DIR$/src/main/resources/com/itzpy/mappers/UserInfoMapper.xml" value="f2f62981-289f-4e9f-a4ca-2fab6d1917c7" />
   </component>
