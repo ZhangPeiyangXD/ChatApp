@@ -1,84 +1,42 @@
 package com.itzpy.controller;
 
-import java.util.List;
-
-import com.itzpy.entity.query.GroupInfoQuery;
-import com.itzpy.entity.po.GroupInfo;
+import com.itzpy.annotation.GlobalInterceptor;
+import com.itzpy.entity.dto.TokenUserInfoDto;
 import com.itzpy.entity.vo.ResponseVO;
 import com.itzpy.service.GroupInfoService;
-import org.springframework.web.bind.annotation.RequestBody;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.multipart.MultipartFile;
 
-import javax.annotation.Resource;
+import javax.servlet.http.HttpServletRequest;
+import javax.validation.constraints.NotEmpty;
+import javax.validation.constraints.NotNull;
 
-/**
- *  Controller
- */
-@RestController("groupInfoController")
-@RequestMapping("/groupInfo")
-public class GroupInfoController extends ABaseController{
+@RestController("groupController")
+@RequestMapping("/group")
+public class GroupInfoController extends ABaseController {
+    @Autowired
+    private GroupInfoService groupInfoService;
 
-	@Resource
-	private GroupInfoService groupInfoService;
-	/**
-	 * 根据条件分页查询
-	 */
-	@RequestMapping("/loadDataList")
-	public ResponseVO loadDataList(GroupInfoQuery query){
-		return getSuccessResponseVO(groupInfoService.findListByPage(query));
-	}
 
-	/**
-	 * 新增
-	 */
-	@RequestMapping("/add")
-	public ResponseVO add(GroupInfo bean) {
-		groupInfoService.add(bean);
-		return getSuccessResponseVO(null);
-	}
+    @GlobalInterceptor
+    @RequestMapping("/saveGroup")
+    public ResponseVO saveGroup(
+            HttpServletRequest request,
+            String groupId,
+            @NotEmpty String groupName,
+            String groupNotice,
+            @NotNull Integer joinType,
+            //如果传进来的图片较大，前端会压缩为avatarCover
+            MultipartFile avatarFile,
+            MultipartFile avatarCover) {
 
-	/**
-	 * 批量新增
-	 */
-	@RequestMapping("/addBatch")
-	public ResponseVO addBatch(@RequestBody List<GroupInfo> listBean) {
-		groupInfoService.addBatch(listBean);
-		return getSuccessResponseVO(null);
-	}
+        // 获取tokenUserInfo,得知当前用户信息，方便群组创建信息填入
+        TokenUserInfoDto userTokenInfo = getTokenUserInfo(request);
 
-	/**
-	 * 批量新增/修改
-	 */
-	@RequestMapping("/addOrUpdateBatch")
-	public ResponseVO addOrUpdateBatch(@RequestBody List<GroupInfo> listBean) {
-		groupInfoService.addBatch(listBean);
-		return getSuccessResponseVO(null);
-	}
+        // TODO 保存群组信息
 
-	/**
-	 * 根据GroupId查询对象
-	 */
-	@RequestMapping("/getGroupInfoByGroupId")
-	public ResponseVO getGroupInfoByGroupId(String groupId) {
-		return getSuccessResponseVO(groupInfoService.getGroupInfoByGroupId(groupId));
-	}
-
-	/**
-	 * 根据GroupId修改对象
-	 */
-	@RequestMapping("/updateGroupInfoByGroupId")
-	public ResponseVO updateGroupInfoByGroupId(GroupInfo bean,String groupId) {
-		groupInfoService.updateGroupInfoByGroupId(bean,groupId);
-		return getSuccessResponseVO(null);
-	}
-
-	/**
-	 * 根据GroupId删除
-	 */
-	@RequestMapping("/deleteGroupInfoByGroupId")
-	public ResponseVO deleteGroupInfoByGroupId(String groupId) {
-		groupInfoService.deleteGroupInfoByGroupId(groupId);
-		return getSuccessResponseVO(null);
-	}
+        return getSuccessResponseVO(null);
+    }
 }

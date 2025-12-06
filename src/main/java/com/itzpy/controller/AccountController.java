@@ -1,8 +1,10 @@
 package com.itzpy.controller;
 
 
+import com.itzpy.annotation.GlobalInterceptor;
 import com.itzpy.constant.Constants;
 import com.itzpy.entity.dto.TokenUserInfoDto;
+import com.itzpy.entity.enums.BeautyAccountStatusEnum;
 import com.itzpy.entity.enums.BeautyAccountStatusEnum;
 import com.itzpy.entity.enums.JoinTypeEnum;
 import com.itzpy.entity.po.UserInfo;
@@ -33,9 +35,6 @@ import java.util.UUID;
 @Validated
 @Logger
 public class AccountController extends ABaseController {
-
-    private static final org.slf4j.Logger log = LoggerFactory.getLogger(AccountController.class);
-
     @Autowired
     private RedisUtils redisUtils;
     @Autowired
@@ -142,6 +141,7 @@ public class AccountController extends ABaseController {
      *
      * @return ResponseVO  系统设置信息的响应对象
      */
+    @GlobalInterceptor
     @RequestMapping("/getSysSetting")
     public ResponseVO getSysSetting() {
         return getSuccessResponseVO(redisComponent.getSysSetting());
