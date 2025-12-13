@@ -26,4 +26,14 @@ public class Constants {
     public static final String ROBOT_UID = UserContactTypeEnum.USER.getPrefix() + "robot" ;
     // 系统设置
     public static final String REDIS_KEY_SYS_SETTING = "easychat:sysssetting:";
+
+    // 文件资源保存路径统一前缀
+    public static final String FILE_FOLDER_FILE = "/file/";
+    // 群头像保存路径前缀
+    public static final String FILE_FOLDER_AVATAR_NAME = "avatar/";
+
+    // 图片后缀
+    public static final String IMAGE_SUFFIX = ".png";
+    // 群头像后缀(缩略图后缀)
+    public static final String COVER_IMAGE_SUFFIX = "_cover.png";
 }

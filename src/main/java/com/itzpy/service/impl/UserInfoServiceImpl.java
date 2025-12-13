@@ -266,6 +266,8 @@ public class UserInfoServiceImpl implements UserInfoService {
         //TODO 查询我的群组
 
         //TODO 查询我的联系人
+
+
         TokenUserInfoDto tokenUserInfoDto = getTokenUserInfoDto(userInfo);
 
         Long lastHeartbeat = redisComponent.getUserHeartbeat(userInfo.getUserId());

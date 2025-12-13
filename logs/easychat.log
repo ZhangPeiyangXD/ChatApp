@@ -1,206 +1,1132 @@
-2025-12-06 12:49:25 [           main] INFO  [com.itzpy.EasyChatApp                   ] [    logStarting] 55 - Starting EasyChatApp using Java 1.8.0_472 on wuhuqifei with PID 16964 (D:\chat_learn\easychat-java\target\classes started by 30275 in D:\chat_learn\easychat-java)
-2025-12-06 12:49:25 [kground-preinit] INFO  [ibernate.validator.internal.util.Version] [       <clinit>] 21 - HV000001: Hibernate Validator 6.2.0.Final
-2025-12-06 12:49:25 [           main] INFO  [com.itzpy.EasyChatApp                   ] [rtupProfileInfo] 635 - No active profile set, falling back to default profiles: default
-2025-12-06 12:49:27 [           main] INFO  [y.config.RepositoryConfigurationDelegate] [eStoresDetected] 262 - Multiple Spring Data modules found, entering strict repository configuration mode!
-2025-12-06 12:49:27 [           main] INFO  [y.config.RepositoryConfigurationDelegate] [rRepositoriesIn] 132 - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
-2025-12-06 12:49:27 [           main] INFO  [y.config.RepositoryConfigurationDelegate] [rRepositoriesIn] 201 - Finished Spring Data repository scanning in 9 ms. Found 0 Redis repository interfaces.
-2025-12-06 12:49:28 [           main] INFO  [boot.web.embedded.tomcat.TomcatWebServer] [     initialize] 108 - Tomcat initialized with port(s): 5050 (http)
-2025-12-06 12:49:28 [           main] INFO  [g.apache.coyote.http11.Http11NioProtocol] [            log] 173 - Initializing ProtocolHandler ["http-nio-5050"]
-2025-12-06 12:49:28 [           main] INFO  [org.apache.catalina.core.StandardService] [            log] 173 - Starting service [Tomcat]
-2025-12-06 12:49:28 [           main] INFO  [org.apache.catalina.core.StandardEngine ] [            log] 173 - Starting Servlet engine: [Apache Tomcat/9.0.55]
-2025-12-06 12:49:28 [           main] INFO  [ontainerBase.[Tomcat].[localhost].[/api]] [            log] 173 - Initializing Spring embedded WebApplicationContext
-2025-12-06 12:49:28 [           main] INFO  [ntext.ServletWebServerApplicationContext] [licationContext] 290 - Root WebApplicationContext: initialization completed in 3074 ms
-2025-12-06 12:49:30 [           main] INFO  [g.apache.coyote.http11.Http11NioProtocol] [            log] 173 - Starting ProtocolHandler ["http-nio-5050"]
-2025-12-06 12:49:30 [           main] INFO  [boot.web.embedded.tomcat.TomcatWebServer] [          start] 220 - Tomcat started on port(s): 5050 (http) with context path '/api'
-2025-12-06 12:49:30 [           main] INFO  [com.itzpy.EasyChatApp                   ] [     logStarted] 61 - Started EasyChatApp in 5.777 seconds (JVM running for 6.868)
-2025-12-06 12:49:30 [           main] INFO  [com.itzpy.controller.AccountController  ] [            run] 28 - 初始化开始
-2025-12-06 12:49:30 [           main] INFO  [com.zaxxer.hikari.HikariDataSource      ] [  getConnection] 110 - HikariCPDataSource - Starting...
-2025-12-06 12:49:31 [           main] INFO  [com.zaxxer.hikari.HikariDataSource      ] [  getConnection] 123 - HikariCPDataSource - Start completed.
-2025-12-06 12:49:32 [           main] INFO  [com.itzpy.controller.AccountController  ] [            run] 33 - 数据库连接成功
-2025-12-06 12:51:55 [ionShutdownHook] INFO  [com.zaxxer.hikari.HikariDataSource      ] [          close] 350 - HikariCPDataSource - Shutdown initiated...
-2025-12-06 12:51:55 [ionShutdownHook] INFO  [com.zaxxer.hikari.HikariDataSource      ] [          close] 352 - HikariCPDataSource - Shutdown completed.
-2025-12-06 12:52:01 [           main] INFO  [com.itzpy.EasyChatApp                   ] [    logStarting] 55 - Starting EasyChatApp using Java 1.8.0_472 on wuhuqifei with PID 17692 (D:\chat_learn\easychat-java\target\classes started by 30275 in D:\chat_learn\easychat-java)
-2025-12-06 12:52:01 [           main] INFO  [com.itzpy.EasyChatApp                   ] [rtupProfileInfo] 635 - No active profile set, falling back to default profiles: default
-2025-12-06 12:52:01 [kground-preinit] INFO  [ibernate.validator.internal.util.Version] [       <clinit>] 21 - HV000001: Hibernate Validator 6.2.0.Final
-2025-12-06 12:52:02 [           main] INFO  [y.config.RepositoryConfigurationDelegate] [eStoresDetected] 262 - Multiple Spring Data modules found, entering strict repository configuration mode!
-2025-12-06 12:52:02 [           main] INFO  [y.config.RepositoryConfigurationDelegate] [rRepositoriesIn] 132 - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
-2025-12-06 12:52:02 [           main] INFO  [y.config.RepositoryConfigurationDelegate] [rRepositoriesIn] 201 - Finished Spring Data repository scanning in 8 ms. Found 0 Redis repository interfaces.
-2025-12-06 12:52:03 [           main] INFO  [boot.web.embedded.tomcat.TomcatWebServer] [     initialize] 108 - Tomcat initialized with port(s): 5050 (http)
-2025-12-06 12:52:03 [           main] INFO  [g.apache.coyote.http11.Http11NioProtocol] [            log] 173 - Initializing ProtocolHandler ["http-nio-5050"]
-2025-12-06 12:52:03 [           main] INFO  [org.apache.catalina.core.StandardService] [            log] 173 - Starting service [Tomcat]
-2025-12-06 12:52:03 [           main] INFO  [org.apache.catalina.core.StandardEngine ] [            log] 173 - Starting Servlet engine: [Apache Tomcat/9.0.55]
-2025-12-06 12:52:03 [           main] INFO  [ontainerBase.[Tomcat].[localhost].[/api]] [            log] 173 - Initializing Spring embedded WebApplicationContext
-2025-12-06 12:52:03 [           main] INFO  [ntext.ServletWebServerApplicationContext] [licationContext] 290 - Root WebApplicationContext: initialization completed in 1362 ms
-2025-12-06 12:52:04 [           main] INFO  [g.apache.coyote.http11.Http11NioProtocol] [            log] 173 - Starting ProtocolHandler ["http-nio-5050"]
-2025-12-06 12:52:04 [           main] INFO  [boot.web.embedded.tomcat.TomcatWebServer] [          start] 220 - Tomcat started on port(s): 5050 (http) with context path '/api'
-2025-12-06 12:52:04 [           main] INFO  [com.itzpy.EasyChatApp                   ] [     logStarted] 61 - Started EasyChatApp in 3.265 seconds (JVM running for 4.059)
-2025-12-06 12:52:04 [           main] INFO  [com.itzpy.controller.AccountController  ] [            run] 28 - 初始化开始
-2025-12-06 12:52:04 [           main] INFO  [com.zaxxer.hikari.HikariDataSource      ] [  getConnection] 110 - HikariCPDataSource - Starting...
-2025-12-06 12:52:04 [           main] INFO  [com.zaxxer.hikari.HikariDataSource      ] [  getConnection] 123 - HikariCPDataSource - Start completed.
-2025-12-06 12:52:05 [           main] INFO  [com.itzpy.controller.AccountController  ] [            run] 33 - 数据库连接成功
-2025-12-06 12:52:11 [nio-5050-exec-1] INFO  [ontainerBase.[Tomcat].[localhost].[/api]] [            log] 173 - Initializing Spring DispatcherServlet 'dispatcherServlet'
-2025-12-06 12:52:11 [nio-5050-exec-1] INFO  [gframework.web.servlet.DispatcherServlet] [initServletBean] 525 - Initializing Servlet 'dispatcherServlet'
-2025-12-06 12:52:11 [nio-5050-exec-1] INFO  [gframework.web.servlet.DispatcherServlet] [initServletBean] 547 - Completed initialization in 2 ms
-2025-12-06 12:53:42 [nio-5050-exec-4] INFO  [com.itzpy.aspect.GlobalOperationAspect  ] [  interceptorDo] 62 - 全局拦截器异常
-com.itzpy.exception.BusinessException: 登陆超时
-2025-12-06 12:56:26 [ionShutdownHook] INFO  [com.zaxxer.hikari.HikariDataSource      ] [          close] 350 - HikariCPDataSource - Shutdown initiated...
-2025-12-06 12:56:26 [ionShutdownHook] INFO  [com.zaxxer.hikari.HikariDataSource      ] [          close] 352 - HikariCPDataSource - Shutdown completed.
-2025-12-06 12:56:44 [kground-preinit] INFO  [ibernate.validator.internal.util.Version] [       <clinit>] 21 - HV000001: Hibernate Validator 6.2.0.Final
-2025-12-06 12:56:44 [           main] INFO  [com.itzpy.EasyChatApp                   ] [    logStarting] 55 - Starting EasyChatApp using Java 1.8.0_472 on wuhuqifei with PID 19248 (D:\chat_learn\easychat-java\target\classes started by 30275 in D:\chat_learn\easychat-java)
-2025-12-06 12:56:44 [           main] INFO  [com.itzpy.EasyChatApp                   ] [rtupProfileInfo] 635 - No active profile set, falling back to default profiles: default
-2025-12-06 12:56:47 [           main] INFO  [y.config.RepositoryConfigurationDelegate] [eStoresDetected] 262 - Multiple Spring Data modules found, entering strict repository configuration mode!
-2025-12-06 12:56:47 [           main] INFO  [y.config.RepositoryConfigurationDelegate] [rRepositoriesIn] 132 - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
-2025-12-06 12:56:48 [           main] INFO  [y.config.RepositoryConfigurationDelegate] [rRepositoriesIn] 201 - Finished Spring Data repository scanning in 41 ms. Found 0 Redis repository interfaces.
-2025-12-06 12:56:51 [           main] INFO  [boot.web.embedded.tomcat.TomcatWebServer] [     initialize] 108 - Tomcat initialized with port(s): 5050 (http)
-2025-12-06 12:56:51 [           main] INFO  [g.apache.coyote.http11.Http11NioProtocol] [            log] 173 - Initializing ProtocolHandler ["http-nio-5050"]
-2025-12-06 12:56:51 [           main] INFO  [org.apache.catalina.core.StandardService] [            log] 173 - Starting service [Tomcat]
-2025-12-06 12:56:51 [           main] INFO  [org.apache.catalina.core.StandardEngine ] [            log] 173 - Starting Servlet engine: [Apache Tomcat/9.0.55]
-2025-12-06 12:56:51 [           main] INFO  [ontainerBase.[Tomcat].[localhost].[/api]] [            log] 173 - Initializing Spring embedded WebApplicationContext
-2025-12-06 12:56:51 [           main] INFO  [ntext.ServletWebServerApplicationContext] [licationContext] 290 - Root WebApplicationContext: initialization completed in 6382 ms
-2025-12-06 12:56:54 [           main] INFO  [g.apache.coyote.http11.Http11NioProtocol] [            log] 173 - Starting ProtocolHandler ["http-nio-5050"]
-2025-12-06 12:56:54 [           main] INFO  [boot.web.embedded.tomcat.TomcatWebServer] [          start] 220 - Tomcat started on port(s): 5050 (http) with context path '/api'
-2025-12-06 12:56:54 [           main] INFO  [com.itzpy.EasyChatApp                   ] [     logStarted] 61 - Started EasyChatApp in 11.557 seconds (JVM running for 14.329)
-2025-12-06 12:56:54 [           main] INFO  [com.itzpy.controller.AccountController  ] [            run] 28 - 初始化开始
-2025-12-06 12:56:54 [           main] INFO  [com.zaxxer.hikari.HikariDataSource      ] [  getConnection] 110 - HikariCPDataSource - Starting...
-2025-12-06 12:56:54 [           main] INFO  [com.zaxxer.hikari.HikariDataSource      ] [  getConnection] 123 - HikariCPDataSource - Start completed.
-2025-12-06 12:56:56 [           main] INFO  [com.itzpy.controller.AccountController  ] [            run] 33 - 数据库连接成功
-2025-12-06 12:56:59 [nio-5050-exec-2] INFO  [ontainerBase.[Tomcat].[localhost].[/api]] [            log] 173 - Initializing Spring DispatcherServlet 'dispatcherServlet'
-2025-12-06 12:56:59 [nio-5050-exec-2] INFO  [gframework.web.servlet.DispatcherServlet] [initServletBean] 525 - Initializing Servlet 'dispatcherServlet'
-2025-12-06 12:56:59 [nio-5050-exec-2] INFO  [gframework.web.servlet.DispatcherServlet] [initServletBean] 547 - Completed initialization in 0 ms
-2025-12-06 12:56:59 [nio-5050-exec-2] INFO  [com.itzpy.aspect.GlobalOperationAspect  ] [  interceptorDo] 62 - 全局拦截器异常
-com.itzpy.exception.BusinessException: 登陆超时
-2025-12-06 12:57:44 [rce housekeeper] WARN  [com.zaxxer.hikari.pool.HikariPool       ] [            run] 788 - HikariCPDataSource - Thread starvation or clock leap detected (housekeeper delta=49s667ms585µs800ns).
-2025-12-06 12:58:01 [ionShutdownHook] INFO  [com.zaxxer.hikari.HikariDataSource      ] [          close] 350 - HikariCPDataSource - Shutdown initiated...
-2025-12-06 12:58:01 [ionShutdownHook] INFO  [com.zaxxer.hikari.HikariDataSource      ] [          close] 352 - HikariCPDataSource - Shutdown completed.
-2025-12-06 12:58:29 [           main] INFO  [com.itzpy.EasyChatApp                   ] [    logStarting] 55 - Starting EasyChatApp using Java 1.8.0_472 on wuhuqifei with PID 21584 (D:\chat_learn\easychat-java\target\classes started by 30275 in D:\chat_learn\easychat-java)
-2025-12-06 12:58:29 [kground-preinit] INFO  [ibernate.validator.internal.util.Version] [       <clinit>] 21 - HV000001: Hibernate Validator 6.2.0.Final
-2025-12-06 12:58:29 [           main] INFO  [com.itzpy.EasyChatApp                   ] [rtupProfileInfo] 635 - No active profile set, falling back to default profiles: default
-2025-12-06 12:58:30 [           main] INFO  [y.config.RepositoryConfigurationDelegate] [eStoresDetected] 262 - Multiple Spring Data modules found, entering strict repository configuration mode!
-2025-12-06 12:58:30 [           main] INFO  [y.config.RepositoryConfigurationDelegate] [rRepositoriesIn] 132 - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
-2025-12-06 12:58:30 [           main] INFO  [y.config.RepositoryConfigurationDelegate] [rRepositoriesIn] 201 - Finished Spring Data repository scanning in 15 ms. Found 0 Redis repository interfaces.
-2025-12-06 12:58:31 [           main] INFO  [boot.web.embedded.tomcat.TomcatWebServer] [     initialize] 108 - Tomcat initialized with port(s): 5050 (http)
-2025-12-06 12:58:31 [           main] INFO  [g.apache.coyote.http11.Http11NioProtocol] [            log] 173 - Initializing ProtocolHandler ["http-nio-5050"]
-2025-12-06 12:58:31 [           main] INFO  [org.apache.catalina.core.StandardService] [            log] 173 - Starting service [Tomcat]
-2025-12-06 12:58:31 [           main] INFO  [org.apache.catalina.core.StandardEngine ] [            log] 173 - Starting Servlet engine: [Apache Tomcat/9.0.55]
-2025-12-06 12:58:31 [           main] INFO  [ontainerBase.[Tomcat].[localhost].[/api]] [            log] 173 - Initializing Spring embedded WebApplicationContext
-2025-12-06 12:58:31 [           main] INFO  [ntext.ServletWebServerApplicationContext] [licationContext] 290 - Root WebApplicationContext: initialization completed in 2163 ms
-2025-12-06 12:58:34 [           main] INFO  [g.apache.coyote.http11.Http11NioProtocol] [            log] 173 - Starting ProtocolHandler ["http-nio-5050"]
-2025-12-06 12:58:34 [           main] INFO  [boot.web.embedded.tomcat.TomcatWebServer] [          start] 220 - Tomcat started on port(s): 5050 (http) with context path '/api'
-2025-12-06 12:58:34 [           main] INFO  [com.itzpy.EasyChatApp                   ] [     logStarted] 61 - Started EasyChatApp in 5.589 seconds (JVM running for 6.755)
-2025-12-06 12:58:34 [           main] INFO  [com.itzpy.controller.AccountController  ] [            run] 28 - 初始化开始
-2025-12-06 12:58:34 [           main] INFO  [com.zaxxer.hikari.HikariDataSource      ] [  getConnection] 110 - HikariCPDataSource - Starting...
-2025-12-06 12:58:34 [           main] INFO  [com.zaxxer.hikari.HikariDataSource      ] [  getConnection] 123 - HikariCPDataSource - Start completed.
-2025-12-06 12:58:36 [           main] INFO  [com.itzpy.controller.AccountController  ] [            run] 33 - 数据库连接成功
-2025-12-06 12:58:40 [nio-5050-exec-1] INFO  [ontainerBase.[Tomcat].[localhost].[/api]] [            log] 173 - Initializing Spring DispatcherServlet 'dispatcherServlet'
-2025-12-06 12:58:40 [nio-5050-exec-1] INFO  [gframework.web.servlet.DispatcherServlet] [initServletBean] 525 - Initializing Servlet 'dispatcherServlet'
-2025-12-06 12:58:40 [nio-5050-exec-1] INFO  [gframework.web.servlet.DispatcherServlet] [initServletBean] 547 - Completed initialization in 9 ms
-2025-12-06 12:58:40 [nio-5050-exec-1] INFO  [com.itzpy.aspect.GlobalOperationAspect  ] [  interceptorDo] 62 - 全局拦截器异常
-com.itzpy.exception.BusinessException: 登陆超时
-2025-12-06 13:00:55 [ionShutdownHook] INFO  [com.zaxxer.hikari.HikariDataSource      ] [          close] 350 - HikariCPDataSource - Shutdown initiated...
-2025-12-06 13:00:55 [ionShutdownHook] INFO  [com.zaxxer.hikari.HikariDataSource      ] [          close] 352 - HikariCPDataSource - Shutdown completed.
-2025-12-06 13:01:01 [           main] INFO  [com.itzpy.EasyChatApp                   ] [    logStarting] 55 - Starting EasyChatApp using Java 1.8.0_472 on wuhuqifei with PID 10576 (D:\chat_learn\easychat-java\target\classes started by 30275 in D:\chat_learn\easychat-java)
-2025-12-06 13:01:01 [kground-preinit] INFO  [ibernate.validator.internal.util.Version] [       <clinit>] 21 - HV000001: Hibernate Validator 6.2.0.Final
-2025-12-06 13:01:01 [           main] INFO  [com.itzpy.EasyChatApp                   ] [rtupProfileInfo] 635 - No active profile set, falling back to default profiles: default
-2025-12-06 13:01:02 [           main] INFO  [y.config.RepositoryConfigurationDelegate] [eStoresDetected] 262 - Multiple Spring Data modules found, entering strict repository configuration mode!
-2025-12-06 13:01:02 [           main] INFO  [y.config.RepositoryConfigurationDelegate] [rRepositoriesIn] 132 - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
-2025-12-06 13:01:02 [           main] INFO  [y.config.RepositoryConfigurationDelegate] [rRepositoriesIn] 201 - Finished Spring Data repository scanning in 13 ms. Found 0 Redis repository interfaces.
-2025-12-06 13:01:04 [           main] INFO  [boot.web.embedded.tomcat.TomcatWebServer] [     initialize] 108 - Tomcat initialized with port(s): 5050 (http)
-2025-12-06 13:01:04 [           main] INFO  [g.apache.coyote.http11.Http11NioProtocol] [            log] 173 - Initializing ProtocolHandler ["http-nio-5050"]
-2025-12-06 13:01:04 [           main] INFO  [org.apache.catalina.core.StandardService] [            log] 173 - Starting service [Tomcat]
-2025-12-06 13:01:04 [           main] INFO  [org.apache.catalina.core.StandardEngine ] [            log] 173 - Starting Servlet engine: [Apache Tomcat/9.0.55]
-2025-12-06 13:01:04 [           main] INFO  [ontainerBase.[Tomcat].[localhost].[/api]] [            log] 173 - Initializing Spring embedded WebApplicationContext
-2025-12-06 13:01:04 [           main] INFO  [ntext.ServletWebServerApplicationContext] [licationContext] 290 - Root WebApplicationContext: initialization completed in 2239 ms
-2025-12-06 13:01:06 [           main] INFO  [g.apache.coyote.http11.Http11NioProtocol] [            log] 173 - Starting ProtocolHandler ["http-nio-5050"]
-2025-12-06 13:01:06 [           main] INFO  [boot.web.embedded.tomcat.TomcatWebServer] [          start] 220 - Tomcat started on port(s): 5050 (http) with context path '/api'
-2025-12-06 13:01:06 [           main] INFO  [com.itzpy.EasyChatApp                   ] [     logStarted] 61 - Started EasyChatApp in 5.733 seconds (JVM running for 6.894)
-2025-12-06 13:01:06 [           main] INFO  [com.itzpy.controller.AccountController  ] [            run] 28 - 初始化开始
-2025-12-06 13:01:06 [           main] INFO  [com.zaxxer.hikari.HikariDataSource      ] [  getConnection] 110 - HikariCPDataSource - Starting...
-2025-12-06 13:01:07 [           main] INFO  [com.zaxxer.hikari.HikariDataSource      ] [  getConnection] 123 - HikariCPDataSource - Start completed.
-2025-12-06 13:01:08 [           main] INFO  [com.itzpy.controller.AccountController  ] [            run] 33 - 数据库连接成功
-2025-12-06 13:01:52 [nio-5050-exec-2] INFO  [ontainerBase.[Tomcat].[localhost].[/api]] [            log] 173 - Initializing Spring DispatcherServlet 'dispatcherServlet'
-2025-12-06 13:01:52 [nio-5050-exec-2] INFO  [gframework.web.servlet.DispatcherServlet] [initServletBean] 525 - Initializing Servlet 'dispatcherServlet'
-2025-12-06 13:01:52 [nio-5050-exec-2] INFO  [gframework.web.servlet.DispatcherServlet] [initServletBean] 547 - Completed initialization in 0 ms
-2025-12-06 13:02:06 [nio-5050-exec-2] INFO  [com.itzpy.aspect.GlobalOperationAspect  ] [  interceptorDo] 52 - 进入全局拦截器，方法：saveGroup
-2025-12-06 13:02:12 [nio-5050-exec-2] INFO  [com.itzpy.aspect.GlobalOperationAspect  ] [  interceptorDo] 62 - 检测到GlobalInterceptor注解，checkLogin=true, checkAdmin=false
-2025-12-06 13:02:14 [nio-5050-exec-2] INFO  [com.itzpy.aspect.GlobalOperationAspect  ] [     checkLogin] 88 - 开始检查登录状态，checkAdmin=false
-2025-12-06 13:02:14 [nio-5050-exec-2] INFO  [com.itzpy.aspect.GlobalOperationAspect  ] [     checkLogin] 99 - 获取到token: null
-2025-12-06 13:02:14 [nio-5050-exec-2] INFO  [com.itzpy.aspect.GlobalOperationAspect  ] [     checkLogin] 105 - 用户未登录或token无效
-2025-12-06 13:02:18 [nio-5050-exec-2] INFO  [com.itzpy.aspect.GlobalOperationAspect  ] [  interceptorDo] 69 - 全局拦截器业务异常
-com.itzpy.exception.BusinessException: 登陆超时
-2025-12-06 13:02:57 [nio-5050-exec-2] ERROR [roller.AGlobalExceptionHandlerController] [handleException] 25 - 请求错误，请求地址http://localhost:5050/api/group/saveGroup,错误信息:
-com.itzpy.exception.BusinessException: 登陆超时
-2025-12-06 13:03:07 [ionShutdownHook] INFO  [com.zaxxer.hikari.HikariDataSource      ] [          close] 350 - HikariCPDataSource - Shutdown initiated...
-2025-12-06 13:03:07 [ionShutdownHook] INFO  [com.zaxxer.hikari.HikariDataSource      ] [          close] 352 - HikariCPDataSource - Shutdown completed.
-2025-12-06 13:03:27 [           main] INFO  [com.itzpy.EasyChatApp                   ] [    logStarting] 55 - Starting EasyChatApp using Java 1.8.0_472 on wuhuqifei with PID 22680 (D:\chat_learn\easychat-java\target\classes started by 30275 in D:\chat_learn\easychat-java)
-2025-12-06 13:03:27 [kground-preinit] INFO  [ibernate.validator.internal.util.Version] [       <clinit>] 21 - HV000001: Hibernate Validator 6.2.0.Final
-2025-12-06 13:03:27 [           main] INFO  [com.itzpy.EasyChatApp                   ] [rtupProfileInfo] 635 - No active profile set, falling back to default profiles: default
-2025-12-06 13:03:27 [           main] INFO  [y.config.RepositoryConfigurationDelegate] [eStoresDetected] 262 - Multiple Spring Data modules found, entering strict repository configuration mode!
-2025-12-06 13:03:27 [           main] INFO  [y.config.RepositoryConfigurationDelegate] [rRepositoriesIn] 132 - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
-2025-12-06 13:03:28 [           main] INFO  [y.config.RepositoryConfigurationDelegate] [rRepositoriesIn] 201 - Finished Spring Data repository scanning in 11 ms. Found 0 Redis repository interfaces.
-2025-12-06 13:03:28 [           main] INFO  [boot.web.embedded.tomcat.TomcatWebServer] [     initialize] 108 - Tomcat initialized with port(s): 5050 (http)
-2025-12-06 13:03:28 [           main] INFO  [g.apache.coyote.http11.Http11NioProtocol] [            log] 173 - Initializing ProtocolHandler ["http-nio-5050"]
-2025-12-06 13:03:28 [           main] INFO  [org.apache.catalina.core.StandardService] [            log] 173 - Starting service [Tomcat]
-2025-12-06 13:03:28 [           main] INFO  [org.apache.catalina.core.StandardEngine ] [            log] 173 - Starting Servlet engine: [Apache Tomcat/9.0.55]
-2025-12-06 13:03:28 [           main] INFO  [ontainerBase.[Tomcat].[localhost].[/api]] [            log] 173 - Initializing Spring embedded WebApplicationContext
-2025-12-06 13:03:28 [           main] INFO  [ntext.ServletWebServerApplicationContext] [licationContext] 290 - Root WebApplicationContext: initialization completed in 1461 ms
-2025-12-06 13:03:30 [           main] INFO  [g.apache.coyote.http11.Http11NioProtocol] [            log] 173 - Starting ProtocolHandler ["http-nio-5050"]
-2025-12-06 13:03:30 [           main] INFO  [boot.web.embedded.tomcat.TomcatWebServer] [          start] 220 - Tomcat started on port(s): 5050 (http) with context path '/api'
-2025-12-06 13:03:31 [           main] INFO  [com.itzpy.EasyChatApp                   ] [     logStarted] 61 - Started EasyChatApp in 4.113 seconds (JVM running for 5.081)
-2025-12-06 13:03:31 [           main] INFO  [com.itzpy.controller.AccountController  ] [            run] 28 - 初始化开始
-2025-12-06 13:03:31 [           main] INFO  [com.zaxxer.hikari.HikariDataSource      ] [  getConnection] 110 - HikariCPDataSource - Starting...
-2025-12-06 13:03:31 [           main] INFO  [com.zaxxer.hikari.HikariDataSource      ] [  getConnection] 123 - HikariCPDataSource - Start completed.
-2025-12-06 13:03:32 [nio-5050-exec-1] INFO  [ontainerBase.[Tomcat].[localhost].[/api]] [            log] 173 - Initializing Spring DispatcherServlet 'dispatcherServlet'
-2025-12-06 13:03:32 [nio-5050-exec-1] INFO  [gframework.web.servlet.DispatcherServlet] [initServletBean] 525 - Initializing Servlet 'dispatcherServlet'
-2025-12-06 13:03:32 [nio-5050-exec-1] INFO  [gframework.web.servlet.DispatcherServlet] [initServletBean] 547 - Completed initialization in 3 ms
-2025-12-06 13:03:32 [nio-5050-exec-1] INFO  [com.itzpy.aspect.GlobalOperationAspect  ] [  interceptorDo] 52 - 进入全局拦截器，方法：saveGroup
-2025-12-06 13:03:32 [nio-5050-exec-1] INFO  [com.itzpy.aspect.GlobalOperationAspect  ] [  interceptorDo] 62 - 检测到GlobalInterceptor注解，checkLogin=true, checkAdmin=false
-2025-12-06 13:03:32 [nio-5050-exec-1] INFO  [com.itzpy.aspect.GlobalOperationAspect  ] [     checkLogin] 88 - 开始检查登录状态，checkAdmin=false
-2025-12-06 13:03:32 [nio-5050-exec-1] INFO  [com.itzpy.aspect.GlobalOperationAspect  ] [     checkLogin] 99 - 获取到token: null
-2025-12-06 13:03:33 [           main] INFO  [com.itzpy.controller.AccountController  ] [            run] 33 - 数据库连接成功
-2025-12-06 13:03:33 [nio-5050-exec-1] INFO  [com.itzpy.aspect.GlobalOperationAspect  ] [     checkLogin] 105 - 用户未登录或token无效
-2025-12-06 13:03:33 [nio-5050-exec-1] INFO  [com.itzpy.aspect.GlobalOperationAspect  ] [  interceptorDo] 69 - 全局拦截器业务异常
-com.itzpy.exception.BusinessException: 登陆超时
-2025-12-06 13:03:33 [nio-5050-exec-1] ERROR [roller.AGlobalExceptionHandlerController] [handleException] 25 - 请求错误，请求地址http://localhost:5050/api/group/saveGroup,错误信息:
-com.itzpy.exception.BusinessException: 登陆超时
-2025-12-06 13:03:36 [nio-5050-exec-3] INFO  [com.itzpy.aspect.GlobalOperationAspect  ] [  interceptorDo] 52 - 进入全局拦截器，方法：saveGroup
-2025-12-06 13:03:36 [nio-5050-exec-3] INFO  [com.itzpy.aspect.GlobalOperationAspect  ] [  interceptorDo] 62 - 检测到GlobalInterceptor注解，checkLogin=true, checkAdmin=false
-2025-12-06 13:03:36 [nio-5050-exec-3] INFO  [com.itzpy.aspect.GlobalOperationAspect  ] [     checkLogin] 88 - 开始检查登录状态，checkAdmin=false
-2025-12-06 13:03:36 [nio-5050-exec-3] INFO  [com.itzpy.aspect.GlobalOperationAspect  ] [     checkLogin] 99 - 获取到token: null
-2025-12-06 13:03:36 [nio-5050-exec-3] INFO  [com.itzpy.aspect.GlobalOperationAspect  ] [     checkLogin] 105 - 用户未登录或token无效
-2025-12-06 13:03:36 [nio-5050-exec-3] INFO  [com.itzpy.aspect.GlobalOperationAspect  ] [  interceptorDo] 69 - 全局拦截器业务异常
-com.itzpy.exception.BusinessException: 登陆超时
-2025-12-06 13:03:36 [nio-5050-exec-3] ERROR [roller.AGlobalExceptionHandlerController] [handleException] 25 - 请求错误，请求地址http://localhost:5050/api/group/saveGroup,错误信息:
-com.itzpy.exception.BusinessException: 登陆超时
-2025-12-06 13:08:09 [ionShutdownHook] INFO  [com.zaxxer.hikari.HikariDataSource      ] [          close] 350 - HikariCPDataSource - Shutdown initiated...
-2025-12-06 13:08:09 [ionShutdownHook] INFO  [com.zaxxer.hikari.HikariDataSource      ] [          close] 352 - HikariCPDataSource - Shutdown completed.
-2025-12-06 13:08:15 [           main] INFO  [com.itzpy.EasyChatApp                   ] [    logStarting] 55 - Starting EasyChatApp using Java 1.8.0_472 on wuhuqifei with PID 23092 (D:\chat_learn\easychat-java\target\classes started by 30275 in D:\chat_learn\easychat-java)
-2025-12-06 13:08:15 [           main] INFO  [com.itzpy.EasyChatApp                   ] [rtupProfileInfo] 635 - No active profile set, falling back to default profiles: default
-2025-12-06 13:08:15 [kground-preinit] INFO  [ibernate.validator.internal.util.Version] [       <clinit>] 21 - HV000001: Hibernate Validator 6.2.0.Final
-2025-12-06 13:08:16 [           main] INFO  [y.config.RepositoryConfigurationDelegate] [eStoresDetected] 262 - Multiple Spring Data modules found, entering strict repository configuration mode!
-2025-12-06 13:08:16 [           main] INFO  [y.config.RepositoryConfigurationDelegate] [rRepositoriesIn] 132 - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
-2025-12-06 13:08:16 [           main] INFO  [y.config.RepositoryConfigurationDelegate] [rRepositoriesIn] 201 - Finished Spring Data repository scanning in 9 ms. Found 0 Redis repository interfaces.
-2025-12-06 13:08:17 [           main] INFO  [boot.web.embedded.tomcat.TomcatWebServer] [     initialize] 108 - Tomcat initialized with port(s): 5050 (http)
-2025-12-06 13:08:17 [           main] INFO  [g.apache.coyote.http11.Http11NioProtocol] [            log] 173 - Initializing ProtocolHandler ["http-nio-5050"]
-2025-12-06 13:08:17 [           main] INFO  [org.apache.catalina.core.StandardService] [            log] 173 - Starting service [Tomcat]
-2025-12-06 13:08:17 [           main] INFO  [org.apache.catalina.core.StandardEngine ] [            log] 173 - Starting Servlet engine: [Apache Tomcat/9.0.55]
-2025-12-06 13:08:17 [           main] INFO  [ontainerBase.[Tomcat].[localhost].[/api]] [            log] 173 - Initializing Spring embedded WebApplicationContext
-2025-12-06 13:08:17 [           main] INFO  [ntext.ServletWebServerApplicationContext] [licationContext] 290 - Root WebApplicationContext: initialization completed in 1332 ms
-2025-12-06 13:08:18 [           main] INFO  [g.apache.coyote.http11.Http11NioProtocol] [            log] 173 - Starting ProtocolHandler ["http-nio-5050"]
-2025-12-06 13:08:18 [           main] INFO  [boot.web.embedded.tomcat.TomcatWebServer] [          start] 220 - Tomcat started on port(s): 5050 (http) with context path '/api'
-2025-12-06 13:08:18 [           main] INFO  [com.itzpy.EasyChatApp                   ] [     logStarted] 61 - Started EasyChatApp in 3.265 seconds (JVM running for 4.023)
-2025-12-06 13:08:18 [           main] INFO  [com.itzpy.controller.AccountController  ] [            run] 28 - 初始化开始
-2025-12-06 13:08:18 [           main] INFO  [com.zaxxer.hikari.HikariDataSource      ] [  getConnection] 110 - HikariCPDataSource - Starting...
-2025-12-06 13:08:18 [           main] INFO  [com.zaxxer.hikari.HikariDataSource      ] [  getConnection] 123 - HikariCPDataSource - Start completed.
-2025-12-06 13:08:19 [           main] INFO  [com.itzpy.controller.AccountController  ] [            run] 33 - 数据库连接成功
-2025-12-06 13:10:10 [nio-5050-exec-2] INFO  [ontainerBase.[Tomcat].[localhost].[/api]] [            log] 173 - Initializing Spring DispatcherServlet 'dispatcherServlet'
-2025-12-06 13:10:10 [nio-5050-exec-2] INFO  [gframework.web.servlet.DispatcherServlet] [initServletBean] 525 - Initializing Servlet 'dispatcherServlet'
-2025-12-06 13:10:10 [nio-5050-exec-2] INFO  [gframework.web.servlet.DispatcherServlet] [initServletBean] 547 - Completed initialization in 2 ms
-2025-12-06 13:10:10 [nio-5050-exec-2] INFO  [com.itzpy.aspect.GlobalOperationAspect  ] [  interceptorDo] 53 - 进入全局拦截器，方法：saveGroup
-2025-12-06 13:10:10 [nio-5050-exec-2] INFO  [com.itzpy.aspect.GlobalOperationAspect  ] [  interceptorDo] 63 - 检测到GlobalInterceptor注解，checkLogin=true, checkAdmin=false
-2025-12-06 13:10:10 [nio-5050-exec-2] INFO  [com.itzpy.aspect.GlobalOperationAspect  ] [     checkLogin] 89 - 开始检查登录状态，checkAdmin=false
-2025-12-06 13:10:10 [nio-5050-exec-2] INFO  [com.itzpy.aspect.GlobalOperationAspect  ] [  interceptorDo] 70 - 全局拦截器业务异常
-com.itzpy.exception.BusinessException: 登陆超时
-2025-12-06 13:10:11 [nio-5050-exec-2] ERROR [roller.AGlobalExceptionHandlerController] [handleException] 25 - 请求错误，请求地址http://localhost:5050/api/group/saveGroup,错误信息:
-com.itzpy.exception.BusinessException: 登陆超时
-2025-12-06 13:10:19 [ionShutdownHook] INFO  [com.zaxxer.hikari.HikariDataSource      ] [          close] 350 - HikariCPDataSource - Shutdown initiated...
-2025-12-06 13:10:19 [ionShutdownHook] INFO  [com.zaxxer.hikari.HikariDataSource      ] [          close] 352 - HikariCPDataSource - Shutdown completed.
+2025-12-14 00:48:11 [           main] INFO  [com.itzpy.EasyChatApp                   ] [    logStarting] 55 - Starting EasyChatApp using Java 1.8.0_472 on wuhuqifei with PID 32092 (D:\chat_learn\easychat-java\target\classes started by 30275 in D:\chat_learn\easychat-java)
+2025-12-14 00:48:11 [kground-preinit] INFO  [ibernate.validator.internal.util.Version] [       <clinit>] 21 - HV000001: Hibernate Validator 6.2.0.Final
+2025-12-14 00:48:11 [           main] INFO  [com.itzpy.EasyChatApp                   ] [rtupProfileInfo] 635 - No active profile set, falling back to default profiles: default
+2025-12-14 00:48:13 [           main] INFO  [y.config.RepositoryConfigurationDelegate] [eStoresDetected] 262 - Multiple Spring Data modules found, entering strict repository configuration mode!
+2025-12-14 00:48:13 [           main] INFO  [y.config.RepositoryConfigurationDelegate] [rRepositoriesIn] 132 - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2025-12-14 00:48:13 [           main] INFO  [y.config.RepositoryConfigurationDelegate] [rRepositoriesIn] 201 - Finished Spring Data repository scanning in 14 ms. Found 0 Redis repository interfaces.
+2025-12-14 00:48:13 [           main] INFO  [boot.web.embedded.tomcat.TomcatWebServer] [     initialize] 108 - Tomcat initialized with port(s): 5050 (http)
+2025-12-14 00:48:13 [           main] INFO  [g.apache.coyote.http11.Http11NioProtocol] [            log] 173 - Initializing ProtocolHandler ["http-nio-5050"]
+2025-12-14 00:48:13 [           main] INFO  [org.apache.catalina.core.StandardService] [            log] 173 - Starting service [Tomcat]
+2025-12-14 00:48:13 [           main] INFO  [org.apache.catalina.core.StandardEngine ] [            log] 173 - Starting Servlet engine: [Apache Tomcat/9.0.55]
+2025-12-14 00:48:13 [           main] INFO  [ontainerBase.[Tomcat].[localhost].[/api]] [            log] 173 - Initializing Spring embedded WebApplicationContext
+2025-12-14 00:48:13 [           main] INFO  [ntext.ServletWebServerApplicationContext] [licationContext] 290 - Root WebApplicationContext: initialization completed in 1904 ms
+2025-12-14 00:48:15 [           main] INFO  [g.apache.coyote.http11.Http11NioProtocol] [            log] 173 - Starting ProtocolHandler ["http-nio-5050"]
+2025-12-14 00:48:15 [           main] INFO  [boot.web.embedded.tomcat.TomcatWebServer] [          start] 220 - Tomcat started on port(s): 5050 (http) with context path '/api'
+2025-12-14 00:48:15 [           main] INFO  [com.itzpy.EasyChatApp                   ] [     logStarted] 61 - Started EasyChatApp in 3.933 seconds (JVM running for 5.012)
+2025-12-14 00:48:15 [           main] INFO  [com.itzpy.controller.AccountController  ] [            run] 28 - 初始化开始
+2025-12-14 00:48:15 [           main] INFO  [com.zaxxer.hikari.HikariDataSource      ] [  getConnection] 110 - HikariCPDataSource - Starting...
+2025-12-14 00:48:15 [           main] INFO  [com.zaxxer.hikari.HikariDataSource      ] [  getConnection] 123 - HikariCPDataSource - Start completed.
+2025-12-14 00:48:18 [           main] ERROR [com.itzpy.controller.AccountController  ] [            run] 37 - redis连接失败
+2025-12-14 00:48:40 [ionShutdownHook] INFO  [com.zaxxer.hikari.HikariDataSource      ] [          close] 350 - HikariCPDataSource - Shutdown initiated...
+2025-12-14 00:48:40 [ionShutdownHook] INFO  [com.zaxxer.hikari.HikariDataSource      ] [          close] 352 - HikariCPDataSource - Shutdown completed.
+2025-12-14 00:48:42 [           main] INFO  [com.itzpy.EasyChatApp                   ] [    logStarting] 55 - Starting EasyChatApp using Java 1.8.0_472 on wuhuqifei with PID 22812 (D:\chat_learn\easychat-java\target\classes started by 30275 in D:\chat_learn\easychat-java)
+2025-12-14 00:48:42 [           main] INFO  [com.itzpy.EasyChatApp                   ] [rtupProfileInfo] 635 - No active profile set, falling back to default profiles: default
+2025-12-14 00:48:42 [kground-preinit] INFO  [ibernate.validator.internal.util.Version] [       <clinit>] 21 - HV000001: Hibernate Validator 6.2.0.Final
+2025-12-14 00:48:43 [           main] INFO  [y.config.RepositoryConfigurationDelegate] [eStoresDetected] 262 - Multiple Spring Data modules found, entering strict repository configuration mode!
+2025-12-14 00:48:43 [           main] INFO  [y.config.RepositoryConfigurationDelegate] [rRepositoriesIn] 132 - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2025-12-14 00:48:43 [           main] INFO  [y.config.RepositoryConfigurationDelegate] [rRepositoriesIn] 201 - Finished Spring Data repository scanning in 7 ms. Found 0 Redis repository interfaces.
+2025-12-14 00:48:43 [           main] INFO  [boot.web.embedded.tomcat.TomcatWebServer] [     initialize] 108 - Tomcat initialized with port(s): 5050 (http)
+2025-12-14 00:48:43 [           main] INFO  [g.apache.coyote.http11.Http11NioProtocol] [            log] 173 - Initializing ProtocolHandler ["http-nio-5050"]
+2025-12-14 00:48:43 [           main] INFO  [org.apache.catalina.core.StandardService] [            log] 173 - Starting service [Tomcat]
+2025-12-14 00:48:43 [           main] INFO  [org.apache.catalina.core.StandardEngine ] [            log] 173 - Starting Servlet engine: [Apache Tomcat/9.0.55]
+2025-12-14 00:48:43 [           main] INFO  [ontainerBase.[Tomcat].[localhost].[/api]] [            log] 173 - Initializing Spring embedded WebApplicationContext
+2025-12-14 00:48:43 [           main] INFO  [ntext.ServletWebServerApplicationContext] [licationContext] 290 - Root WebApplicationContext: initialization completed in 1070 ms
+2025-12-14 00:48:45 [           main] INFO  [g.apache.coyote.http11.Http11NioProtocol] [            log] 173 - Starting ProtocolHandler ["http-nio-5050"]
+2025-12-14 00:48:45 [           main] INFO  [boot.web.embedded.tomcat.TomcatWebServer] [          start] 220 - Tomcat started on port(s): 5050 (http) with context path '/api'
+2025-12-14 00:48:45 [           main] INFO  [com.itzpy.EasyChatApp                   ] [     logStarted] 61 - Started EasyChatApp in 2.813 seconds (JVM running for 3.618)
+2025-12-14 00:48:45 [           main] INFO  [com.itzpy.controller.AccountController  ] [            run] 28 - 初始化开始
+2025-12-14 00:48:45 [           main] INFO  [com.zaxxer.hikari.HikariDataSource      ] [  getConnection] 110 - HikariCPDataSource - Starting...
+2025-12-14 00:48:45 [           main] INFO  [com.zaxxer.hikari.HikariDataSource      ] [  getConnection] 123 - HikariCPDataSource - Start completed.
+2025-12-14 00:48:45 [           main] INFO  [com.itzpy.controller.AccountController  ] [            run] 33 - 数据库连接成功
+2025-12-14 00:48:51 [nio-5050-exec-1] INFO  [ontainerBase.[Tomcat].[localhost].[/api]] [            log] 173 - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-12-14 00:48:51 [nio-5050-exec-1] INFO  [gframework.web.servlet.DispatcherServlet] [initServletBean] 525 - Initializing Servlet 'dispatcherServlet'
+2025-12-14 00:48:51 [nio-5050-exec-1] INFO  [gframework.web.servlet.DispatcherServlet] [initServletBean] 547 - Completed initialization in 1 ms
+2025-12-14 00:49:06 [nio-5050-exec-2] ERROR [roller.AGlobalExceptionHandlerController] [handleException] 25 - 请求错误，请求地址http://127.0.0.1:5050/api/account/login,错误信息:
+com.itzpy.exception.BusinessException: 密码错误
+2025-12-14 00:49:41 [nio-5050-exec-6] WARN  [springframework.web.servlet.PageNotFound] [ noHandlerFound] 1278 - No mapping for POST /api/userInfo/getUserInfo
+2025-12-14 00:49:41 [nio-5050-exec-6] ERROR [roller.AGlobalExceptionHandlerController] [handleException] 25 - 请求错误，请求地址http://127.0.0.1:5050/api/userInfo/getUserInfo,错误信息:
+org.springframework.web.servlet.NoHandlerFoundException: No handler found for POST /api/userInfo/getUserInfo
+	at org.springframework.web.servlet.DispatcherServlet.noHandlerFound(DispatcherServlet.java:1282)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1045)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:963)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:909)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:681)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:764)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:197)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:540)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:135)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:357)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:382)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:895)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1722)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:750)
+2025-12-14 00:49:41 [nio-5050-exec-7] INFO  [com.itzpy.aspect.GlobalOperationAspect  ] [  interceptorDo] 53 - 进入全局拦截器，方法：getSysSetting
+2025-12-14 00:49:41 [nio-5050-exec-7] INFO  [com.itzpy.aspect.GlobalOperationAspect  ] [  interceptorDo] 63 - 检测到GlobalInterceptor注解，checkLogin=true, checkAdmin=false
+2025-12-14 00:49:41 [nio-5050-exec-7] INFO  [com.itzpy.aspect.GlobalOperationAspect  ] [     checkLogin] 89 - 开始检查登录状态，checkAdmin=false
+2025-12-14 00:49:41 [nio-5050-exec-7] INFO  [com.itzpy.aspect.GlobalOperationAspect  ] [     checkLogin] 104 - 获取到token: 82352b3c7b6e1898a9fa88230c2af1f4
+2025-12-14 00:49:41 [nio-5050-exec-5] WARN  [springframework.web.servlet.PageNotFound] [ noHandlerFound] 1278 - No mapping for POST /api/update/checkVersion
+2025-12-14 00:49:41 [nio-5050-exec-5] ERROR [roller.AGlobalExceptionHandlerController] [handleException] 25 - 请求错误，请求地址http://127.0.0.1:5050/api/update/checkVersion,错误信息:
+org.springframework.web.servlet.NoHandlerFoundException: No handler found for POST /api/update/checkVersion
+	at org.springframework.web.servlet.DispatcherServlet.noHandlerFound(DispatcherServlet.java:1282)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1045)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:963)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:909)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:681)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:764)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:197)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:540)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:135)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:357)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:382)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:895)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1722)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:750)
+2025-12-14 00:49:41 [nio-5050-exec-7] INFO  [com.itzpy.aspect.GlobalOperationAspect  ] [     checkLogin] 118 - 用户验证通过，userId: U44252223775
+2025-12-14 00:50:13 [nio-5050-exec-8] WARN  [springframework.web.servlet.PageNotFound] [ noHandlerFound] 1278 - No mapping for POST /api/contact/loadContact
+2025-12-14 00:50:13 [nio-5050-exec-8] ERROR [roller.AGlobalExceptionHandlerController] [handleException] 25 - 请求错误，请求地址http://127.0.0.1:5050/api/contact/loadContact,错误信息:
+org.springframework.web.servlet.NoHandlerFoundException: No handler found for POST /api/contact/loadContact
+	at org.springframework.web.servlet.DispatcherServlet.noHandlerFound(DispatcherServlet.java:1282)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1045)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:963)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:909)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:681)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:764)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:197)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:540)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:135)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:357)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:382)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:895)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1722)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:750)
+2025-12-14 00:50:13 [nio-5050-exec-9] WARN  [springframework.web.servlet.PageNotFound] [ noHandlerFound] 1278 - No mapping for POST /api/contact/loadContact
+2025-12-14 00:50:13 [nio-5050-exec-9] ERROR [roller.AGlobalExceptionHandlerController] [handleException] 25 - 请求错误，请求地址http://127.0.0.1:5050/api/contact/loadContact,错误信息:
+org.springframework.web.servlet.NoHandlerFoundException: No handler found for POST /api/contact/loadContact
+	at org.springframework.web.servlet.DispatcherServlet.noHandlerFound(DispatcherServlet.java:1282)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1045)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:963)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:909)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:681)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:764)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:197)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:540)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:135)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:357)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:382)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:895)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1722)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:750)
+2025-12-14 00:50:14 [io-5050-exec-10] WARN  [springframework.web.servlet.PageNotFound] [ noHandlerFound] 1278 - No mapping for POST /api/group/loadMyGroup
+2025-12-14 00:50:14 [io-5050-exec-10] ERROR [roller.AGlobalExceptionHandlerController] [handleException] 25 - 请求错误，请求地址http://127.0.0.1:5050/api/group/loadMyGroup,错误信息:
+org.springframework.web.servlet.NoHandlerFoundException: No handler found for POST /api/group/loadMyGroup
+	at org.springframework.web.servlet.DispatcherServlet.noHandlerFound(DispatcherServlet.java:1282)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1045)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:963)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:909)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:681)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:764)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:197)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:540)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:135)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:357)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:382)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:895)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1722)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:750)
+2025-12-14 00:51:02 [nio-5050-exec-1] INFO  [com.itzpy.aspect.GlobalOperationAspect  ] [  interceptorDo] 53 - 进入全局拦截器，方法：saveGroup
+2025-12-14 00:51:02 [nio-5050-exec-1] INFO  [com.itzpy.aspect.GlobalOperationAspect  ] [  interceptorDo] 63 - 检测到GlobalInterceptor注解，checkLogin=true, checkAdmin=false
+2025-12-14 00:51:02 [nio-5050-exec-1] INFO  [com.itzpy.aspect.GlobalOperationAspect  ] [     checkLogin] 89 - 开始检查登录状态，checkAdmin=false
+2025-12-14 00:51:02 [nio-5050-exec-1] INFO  [com.itzpy.aspect.GlobalOperationAspect  ] [     checkLogin] 104 - 获取到token: 82352b3c7b6e1898a9fa88230c2af1f4
+2025-12-14 00:51:02 [nio-5050-exec-1] INFO  [com.itzpy.aspect.GlobalOperationAspect  ] [     checkLogin] 118 - 用户验证通过，userId: U44252223775
+2025-12-14 00:51:03 [nio-5050-exec-2] WARN  [springframework.web.servlet.PageNotFound] [ noHandlerFound] 1278 - No mapping for POST /api/group/loadMyGroup
+2025-12-14 00:51:03 [nio-5050-exec-2] ERROR [roller.AGlobalExceptionHandlerController] [handleException] 25 - 请求错误，请求地址http://127.0.0.1:5050/api/group/loadMyGroup,错误信息:
+org.springframework.web.servlet.NoHandlerFoundException: No handler found for POST /api/group/loadMyGroup
+	at org.springframework.web.servlet.DispatcherServlet.noHandlerFound(DispatcherServlet.java:1282)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1045)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:963)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:909)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:681)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:764)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:197)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:540)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:135)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:357)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:382)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:895)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1722)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:750)
+2025-12-14 00:51:05 [nio-5050-exec-3] WARN  [springframework.web.servlet.PageNotFound] [ noHandlerFound] 1278 - No mapping for POST /api/contact/loadApply
+2025-12-14 00:51:05 [nio-5050-exec-3] ERROR [roller.AGlobalExceptionHandlerController] [handleException] 25 - 请求错误，请求地址http://127.0.0.1:5050/api/contact/loadApply,错误信息:
+org.springframework.web.servlet.NoHandlerFoundException: No handler found for POST /api/contact/loadApply
+	at org.springframework.web.servlet.DispatcherServlet.noHandlerFound(DispatcherServlet.java:1282)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1045)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:963)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:909)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:681)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:764)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:197)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:540)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:135)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:357)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:382)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:895)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1722)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:750)
+2025-12-14 00:56:04 [ionShutdownHook] INFO  [com.zaxxer.hikari.HikariDataSource      ] [          close] 350 - HikariCPDataSource - Shutdown initiated...
+2025-12-14 00:56:04 [ionShutdownHook] INFO  [com.zaxxer.hikari.HikariDataSource      ] [          close] 352 - HikariCPDataSource - Shutdown completed.
+2025-12-14 00:56:09 [           main] INFO  [com.itzpy.EasyChatApp                   ] [    logStarting] 55 - Starting EasyChatApp using Java 1.8.0_472 on wuhuqifei with PID 31636 (D:\chat_learn\easychat-java\target\classes started by 30275 in D:\chat_learn\easychat-java)
+2025-12-14 00:56:09 [kground-preinit] INFO  [ibernate.validator.internal.util.Version] [       <clinit>] 21 - HV000001: Hibernate Validator 6.2.0.Final
+2025-12-14 00:56:09 [           main] INFO  [com.itzpy.EasyChatApp                   ] [rtupProfileInfo] 635 - No active profile set, falling back to default profiles: default
+2025-12-14 00:56:10 [           main] INFO  [y.config.RepositoryConfigurationDelegate] [eStoresDetected] 262 - Multiple Spring Data modules found, entering strict repository configuration mode!
+2025-12-14 00:56:10 [           main] INFO  [y.config.RepositoryConfigurationDelegate] [rRepositoriesIn] 132 - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2025-12-14 00:56:10 [           main] INFO  [y.config.RepositoryConfigurationDelegate] [rRepositoriesIn] 201 - Finished Spring Data repository scanning in 7 ms. Found 0 Redis repository interfaces.
+2025-12-14 00:56:11 [           main] INFO  [boot.web.embedded.tomcat.TomcatWebServer] [     initialize] 108 - Tomcat initialized with port(s): 5050 (http)
+2025-12-14 00:56:11 [           main] INFO  [g.apache.coyote.http11.Http11NioProtocol] [            log] 173 - Initializing ProtocolHandler ["http-nio-5050"]
+2025-12-14 00:56:11 [           main] INFO  [org.apache.catalina.core.StandardService] [            log] 173 - Starting service [Tomcat]
+2025-12-14 00:56:11 [           main] INFO  [org.apache.catalina.core.StandardEngine ] [            log] 173 - Starting Servlet engine: [Apache Tomcat/9.0.55]
+2025-12-14 00:56:11 [           main] INFO  [ontainerBase.[Tomcat].[localhost].[/api]] [            log] 173 - Initializing Spring embedded WebApplicationContext
+2025-12-14 00:56:11 [           main] INFO  [ntext.ServletWebServerApplicationContext] [licationContext] 290 - Root WebApplicationContext: initialization completed in 1215 ms
+2025-12-14 00:56:12 [           main] INFO  [g.apache.coyote.http11.Http11NioProtocol] [            log] 173 - Starting ProtocolHandler ["http-nio-5050"]
+2025-12-14 00:56:12 [           main] INFO  [boot.web.embedded.tomcat.TomcatWebServer] [          start] 220 - Tomcat started on port(s): 5050 (http) with context path '/api'
+2025-12-14 00:56:12 [           main] INFO  [com.itzpy.EasyChatApp                   ] [     logStarted] 61 - Started EasyChatApp in 3.039 seconds (JVM running for 3.811)
+2025-12-14 00:56:12 [           main] INFO  [com.itzpy.controller.AccountController  ] [            run] 28 - 初始化开始
+2025-12-14 00:56:12 [           main] INFO  [com.zaxxer.hikari.HikariDataSource      ] [  getConnection] 110 - HikariCPDataSource - Starting...
+2025-12-14 00:56:12 [           main] INFO  [com.zaxxer.hikari.HikariDataSource      ] [  getConnection] 123 - HikariCPDataSource - Start completed.
+2025-12-14 00:56:13 [           main] INFO  [com.itzpy.controller.AccountController  ] [            run] 33 - 数据库连接成功
+2025-12-14 00:56:23 [nio-5050-exec-1] INFO  [ontainerBase.[Tomcat].[localhost].[/api]] [            log] 173 - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-12-14 00:56:23 [nio-5050-exec-1] INFO  [gframework.web.servlet.DispatcherServlet] [initServletBean] 525 - Initializing Servlet 'dispatcherServlet'
+2025-12-14 00:56:23 [nio-5050-exec-1] INFO  [gframework.web.servlet.DispatcherServlet] [initServletBean] 547 - Completed initialization in 1 ms
+2025-12-14 00:56:23 [nio-5050-exec-1] INFO  [com.itzpy.aspect.GlobalOperationAspect  ] [  interceptorDo] 53 - 进入全局拦截器，方法：saveGroup
+2025-12-14 00:56:23 [nio-5050-exec-1] INFO  [com.itzpy.aspect.GlobalOperationAspect  ] [  interceptorDo] 63 - 检测到GlobalInterceptor注解，checkLogin=true, checkAdmin=false
+2025-12-14 00:56:23 [nio-5050-exec-1] INFO  [com.itzpy.aspect.GlobalOperationAspect  ] [     checkLogin] 89 - 开始检查登录状态，checkAdmin=false
+2025-12-14 00:56:23 [nio-5050-exec-1] INFO  [com.itzpy.aspect.GlobalOperationAspect  ] [     checkLogin] 104 - 获取到token: 82352b3c7b6e1898a9fa88230c2af1f4
+2025-12-14 00:56:23 [nio-5050-exec-1] INFO  [com.itzpy.aspect.GlobalOperationAspect  ] [     checkLogin] 118 - 用户验证通过，userId: U44252223775
+2025-12-14 00:56:24 [nio-5050-exec-2] WARN  [springframework.web.servlet.PageNotFound] [ noHandlerFound] 1278 - No mapping for POST /api/group/loadMyGroup
+2025-12-14 00:56:24 [nio-5050-exec-2] ERROR [roller.AGlobalExceptionHandlerController] [handleException] 25 - 请求错误，请求地址http://127.0.0.1:5050/api/group/loadMyGroup,错误信息:
+org.springframework.web.servlet.NoHandlerFoundException: No handler found for POST /api/group/loadMyGroup
+	at org.springframework.web.servlet.DispatcherServlet.noHandlerFound(DispatcherServlet.java:1282)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1045)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:963)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:909)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:681)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:764)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:197)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:540)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:135)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:357)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:382)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:895)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1722)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:750)
+2025-12-14 01:02:50 [nio-5050-exec-3] WARN  [springframework.web.servlet.PageNotFound] [ noHandlerFound] 1278 - No mapping for POST /api/contact/loadContact
+2025-12-14 01:02:50 [nio-5050-exec-3] ERROR [roller.AGlobalExceptionHandlerController] [handleException] 25 - 请求错误，请求地址http://127.0.0.1:5050/api/contact/loadContact,错误信息:
+org.springframework.web.servlet.NoHandlerFoundException: No handler found for POST /api/contact/loadContact
+	at org.springframework.web.servlet.DispatcherServlet.noHandlerFound(DispatcherServlet.java:1282)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1045)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:963)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:909)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:681)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:764)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:197)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:540)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:135)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:357)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:382)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:895)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1722)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:750)
+2025-12-14 01:02:50 [nio-5050-exec-5] WARN  [springframework.web.servlet.PageNotFound] [ noHandlerFound] 1278 - No mapping for POST /api/group/loadMyGroup
+2025-12-14 01:02:50 [nio-5050-exec-7] WARN  [springframework.web.servlet.PageNotFound] [ noHandlerFound] 1278 - No mapping for POST /api/userInfo/getUserInfo
+2025-12-14 01:02:50 [nio-5050-exec-8] INFO  [com.itzpy.aspect.GlobalOperationAspect  ] [  interceptorDo] 53 - 进入全局拦截器，方法：getSysSetting
+2025-12-14 01:02:50 [nio-5050-exec-8] INFO  [com.itzpy.aspect.GlobalOperationAspect  ] [  interceptorDo] 63 - 检测到GlobalInterceptor注解，checkLogin=true, checkAdmin=false
+2025-12-14 01:02:50 [nio-5050-exec-4] WARN  [springframework.web.servlet.PageNotFound] [ noHandlerFound] 1278 - No mapping for POST /api/contact/loadContact
+2025-12-14 01:02:50 [nio-5050-exec-8] INFO  [com.itzpy.aspect.GlobalOperationAspect  ] [     checkLogin] 89 - 开始检查登录状态，checkAdmin=false
+2025-12-14 01:02:50 [nio-5050-exec-8] INFO  [com.itzpy.aspect.GlobalOperationAspect  ] [     checkLogin] 104 - 获取到token: 82352b3c7b6e1898a9fa88230c2af1f4
+2025-12-14 01:02:50 [nio-5050-exec-5] ERROR [roller.AGlobalExceptionHandlerController] [handleException] 25 - 请求错误，请求地址http://127.0.0.1:5050/api/group/loadMyGroup,错误信息:
+org.springframework.web.servlet.NoHandlerFoundException: No handler found for POST /api/group/loadMyGroup
+	at org.springframework.web.servlet.DispatcherServlet.noHandlerFound(DispatcherServlet.java:1282)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1045)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:963)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:909)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:681)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:764)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:197)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:540)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:135)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:357)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:382)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:895)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1722)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:750)
+2025-12-14 01:02:50 [nio-5050-exec-4] ERROR [roller.AGlobalExceptionHandlerController] [handleException] 25 - 请求错误，请求地址http://127.0.0.1:5050/api/contact/loadContact,错误信息:
+org.springframework.web.servlet.NoHandlerFoundException: No handler found for POST /api/contact/loadContact
+	at org.springframework.web.servlet.DispatcherServlet.noHandlerFound(DispatcherServlet.java:1282)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1045)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:963)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:909)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:681)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:764)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:197)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:540)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:135)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:357)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:382)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:895)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1722)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:750)
+2025-12-14 01:02:50 [nio-5050-exec-7] ERROR [roller.AGlobalExceptionHandlerController] [handleException] 25 - 请求错误，请求地址http://127.0.0.1:5050/api/userInfo/getUserInfo,错误信息:
+org.springframework.web.servlet.NoHandlerFoundException: No handler found for POST /api/userInfo/getUserInfo
+	at org.springframework.web.servlet.DispatcherServlet.noHandlerFound(DispatcherServlet.java:1282)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1045)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:963)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:909)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:681)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:764)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:197)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:540)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:135)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:357)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:382)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:895)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1722)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:750)
+2025-12-14 01:02:50 [nio-5050-exec-8] INFO  [com.itzpy.aspect.GlobalOperationAspect  ] [     checkLogin] 118 - 用户验证通过，userId: U44252223775
+2025-12-14 01:02:50 [nio-5050-exec-6] WARN  [springframework.web.servlet.PageNotFound] [ noHandlerFound] 1278 - No mapping for POST /api/update/checkVersion
+2025-12-14 01:02:50 [nio-5050-exec-6] ERROR [roller.AGlobalExceptionHandlerController] [handleException] 25 - 请求错误，请求地址http://127.0.0.1:5050/api/update/checkVersion,错误信息:
+org.springframework.web.servlet.NoHandlerFoundException: No handler found for POST /api/update/checkVersion
+	at org.springframework.web.servlet.DispatcherServlet.noHandlerFound(DispatcherServlet.java:1282)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1045)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:963)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:909)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:681)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:764)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:197)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:540)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:135)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:357)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:382)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:895)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1722)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:750)
+2025-12-14 01:03:17 [nio-5050-exec-1] WARN  [springframework.web.servlet.PageNotFound] [ noHandlerFound] 1278 - No mapping for POST /api/group/loadMyGroup
+2025-12-14 01:03:17 [nio-5050-exec-9] WARN  [springframework.web.servlet.PageNotFound] [ noHandlerFound] 1278 - No mapping for POST /api/contact/loadContact
+2025-12-14 01:03:17 [nio-5050-exec-1] ERROR [roller.AGlobalExceptionHandlerController] [handleException] 25 - 请求错误，请求地址http://127.0.0.1:5050/api/group/loadMyGroup,错误信息:
+org.springframework.web.servlet.NoHandlerFoundException: No handler found for POST /api/group/loadMyGroup
+	at org.springframework.web.servlet.DispatcherServlet.noHandlerFound(DispatcherServlet.java:1282)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1045)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:963)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:909)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:681)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:764)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:197)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:540)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:135)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:357)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:382)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:895)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1722)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:750)
+2025-12-14 01:03:17 [nio-5050-exec-9] ERROR [roller.AGlobalExceptionHandlerController] [handleException] 25 - 请求错误，请求地址http://127.0.0.1:5050/api/contact/loadContact,错误信息:
+org.springframework.web.servlet.NoHandlerFoundException: No handler found for POST /api/contact/loadContact
+	at org.springframework.web.servlet.DispatcherServlet.noHandlerFound(DispatcherServlet.java:1282)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1045)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:963)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:909)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:681)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:764)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:197)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:540)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:135)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:357)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:382)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:895)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1722)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:750)
+2025-12-14 01:03:17 [io-5050-exec-10] WARN  [springframework.web.servlet.PageNotFound] [ noHandlerFound] 1278 - No mapping for POST /api/contact/loadContact
+2025-12-14 01:03:17 [io-5050-exec-10] ERROR [roller.AGlobalExceptionHandlerController] [handleException] 25 - 请求错误，请求地址http://127.0.0.1:5050/api/contact/loadContact,错误信息:
+org.springframework.web.servlet.NoHandlerFoundException: No handler found for POST /api/contact/loadContact
+	at org.springframework.web.servlet.DispatcherServlet.noHandlerFound(DispatcherServlet.java:1282)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1045)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:963)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:909)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:681)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:764)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:197)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:540)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:135)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:357)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:382)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:895)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1722)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:750)
+2025-12-14 01:03:24 [ionShutdownHook] INFO  [com.zaxxer.hikari.HikariDataSource      ] [          close] 350 - HikariCPDataSource - Shutdown initiated...
+2025-12-14 01:03:24 [ionShutdownHook] INFO  [com.zaxxer.hikari.HikariDataSource      ] [          close] 352 - HikariCPDataSource - Shutdown completed.
+2025-12-14 01:03:29 [           main] INFO  [com.itzpy.EasyChatApp                   ] [    logStarting] 55 - Starting EasyChatApp using Java 1.8.0_472 on wuhuqifei with PID 20852 (D:\chat_learn\easychat-java\target\classes started by 30275 in D:\chat_learn\easychat-java)
+2025-12-14 01:03:29 [           main] INFO  [com.itzpy.EasyChatApp                   ] [rtupProfileInfo] 635 - No active profile set, falling back to default profiles: default
+2025-12-14 01:03:29 [kground-preinit] INFO  [ibernate.validator.internal.util.Version] [       <clinit>] 21 - HV000001: Hibernate Validator 6.2.0.Final
+2025-12-14 01:03:29 [           main] INFO  [y.config.RepositoryConfigurationDelegate] [eStoresDetected] 262 - Multiple Spring Data modules found, entering strict repository configuration mode!
+2025-12-14 01:03:29 [           main] INFO  [y.config.RepositoryConfigurationDelegate] [rRepositoriesIn] 132 - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2025-12-14 01:03:29 [           main] INFO  [y.config.RepositoryConfigurationDelegate] [rRepositoriesIn] 201 - Finished Spring Data repository scanning in 7 ms. Found 0 Redis repository interfaces.
+2025-12-14 01:03:30 [           main] INFO  [boot.web.embedded.tomcat.TomcatWebServer] [     initialize] 108 - Tomcat initialized with port(s): 5050 (http)
+2025-12-14 01:03:30 [           main] INFO  [g.apache.coyote.http11.Http11NioProtocol] [            log] 173 - Initializing ProtocolHandler ["http-nio-5050"]
+2025-12-14 01:03:30 [           main] INFO  [org.apache.catalina.core.StandardService] [            log] 173 - Starting service [Tomcat]
+2025-12-14 01:03:30 [           main] INFO  [org.apache.catalina.core.StandardEngine ] [            log] 173 - Starting Servlet engine: [Apache Tomcat/9.0.55]
+2025-12-14 01:03:30 [           main] INFO  [ontainerBase.[Tomcat].[localhost].[/api]] [            log] 173 - Initializing Spring embedded WebApplicationContext
+2025-12-14 01:03:30 [           main] INFO  [ntext.ServletWebServerApplicationContext] [licationContext] 290 - Root WebApplicationContext: initialization completed in 1075 ms
+2025-12-14 01:03:31 [           main] INFO  [g.apache.coyote.http11.Http11NioProtocol] [            log] 173 - Starting ProtocolHandler ["http-nio-5050"]
+2025-12-14 01:03:31 [           main] INFO  [boot.web.embedded.tomcat.TomcatWebServer] [          start] 220 - Tomcat started on port(s): 5050 (http) with context path '/api'
+2025-12-14 01:03:31 [           main] INFO  [com.itzpy.EasyChatApp                   ] [     logStarted] 61 - Started EasyChatApp in 2.618 seconds (JVM running for 3.259)
+2025-12-14 01:03:31 [           main] INFO  [com.itzpy.controller.AccountController  ] [            run] 28 - 初始化开始
+2025-12-14 01:03:31 [           main] INFO  [com.zaxxer.hikari.HikariDataSource      ] [  getConnection] 110 - HikariCPDataSource - Starting...
+2025-12-14 01:03:31 [           main] INFO  [com.zaxxer.hikari.HikariDataSource      ] [  getConnection] 123 - HikariCPDataSource - Start completed.
+2025-12-14 01:03:32 [           main] INFO  [com.itzpy.controller.AccountController  ] [            run] 33 - 数据库连接成功
+2025-12-14 01:04:33 [nio-5050-exec-6] INFO  [ontainerBase.[Tomcat].[localhost].[/api]] [            log] 173 - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-12-14 01:04:33 [nio-5050-exec-6] INFO  [gframework.web.servlet.DispatcherServlet] [initServletBean] 525 - Initializing Servlet 'dispatcherServlet'
+2025-12-14 01:04:33 [nio-5050-exec-6] INFO  [gframework.web.servlet.DispatcherServlet] [initServletBean] 547 - Completed initialization in 1 ms
+2025-12-14 01:04:33 [nio-5050-exec-5] WARN  [springframework.web.servlet.PageNotFound] [ noHandlerFound] 1278 - No mapping for POST /api/userInfo/getUserInfo
+2025-12-14 01:04:33 [nio-5050-exec-1] WARN  [springframework.web.servlet.PageNotFound] [ noHandlerFound] 1278 - No mapping for POST /api/contact/loadContact
+2025-12-14 01:04:33 [nio-5050-exec-6] WARN  [springframework.web.servlet.PageNotFound] [ noHandlerFound] 1278 - No mapping for POST /api/contact/loadContact
+2025-12-14 01:04:33 [nio-5050-exec-3] WARN  [springframework.web.servlet.PageNotFound] [ noHandlerFound] 1278 - No mapping for POST /api/update/checkVersion
+2025-12-14 01:04:33 [nio-5050-exec-3] ERROR [roller.AGlobalExceptionHandlerController] [handleException] 25 - 请求错误，请求地址http://127.0.0.1:5050/api/update/checkVersion,错误信息:
+org.springframework.web.servlet.NoHandlerFoundException: No handler found for POST /api/update/checkVersion
+	at org.springframework.web.servlet.DispatcherServlet.noHandlerFound(DispatcherServlet.java:1282)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1045)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:963)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:909)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:681)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:764)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:197)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:540)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:135)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:357)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:382)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:895)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1722)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:750)
+2025-12-14 01:04:33 [nio-5050-exec-1] ERROR [roller.AGlobalExceptionHandlerController] [handleException] 25 - 请求错误，请求地址http://127.0.0.1:5050/api/contact/loadContact,错误信息:
+org.springframework.web.servlet.NoHandlerFoundException: No handler found for POST /api/contact/loadContact
+	at org.springframework.web.servlet.DispatcherServlet.noHandlerFound(DispatcherServlet.java:1282)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1045)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:963)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:909)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:681)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:764)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:197)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:540)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:135)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:357)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:382)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:895)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1722)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:750)
+2025-12-14 01:04:33 [nio-5050-exec-6] ERROR [roller.AGlobalExceptionHandlerController] [handleException] 25 - 请求错误，请求地址http://127.0.0.1:5050/api/contact/loadContact,错误信息:
+org.springframework.web.servlet.NoHandlerFoundException: No handler found for POST /api/contact/loadContact
+	at org.springframework.web.servlet.DispatcherServlet.noHandlerFound(DispatcherServlet.java:1282)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1045)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:963)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:909)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:681)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:764)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:197)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:540)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:135)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:357)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:382)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:895)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1722)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:750)
+2025-12-14 01:04:33 [nio-5050-exec-5] ERROR [roller.AGlobalExceptionHandlerController] [handleException] 25 - 请求错误，请求地址http://127.0.0.1:5050/api/userInfo/getUserInfo,错误信息:
+org.springframework.web.servlet.NoHandlerFoundException: No handler found for POST /api/userInfo/getUserInfo
+	at org.springframework.web.servlet.DispatcherServlet.noHandlerFound(DispatcherServlet.java:1282)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1045)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:963)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:909)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:681)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:764)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:197)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:540)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:135)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:357)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:382)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:895)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1722)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:750)
+2025-12-14 01:04:33 [nio-5050-exec-2] INFO  [com.itzpy.aspect.GlobalOperationAspect  ] [  interceptorDo] 53 - 进入全局拦截器，方法：getSysSetting
+2025-12-14 01:04:33 [nio-5050-exec-2] INFO  [com.itzpy.aspect.GlobalOperationAspect  ] [  interceptorDo] 63 - 检测到GlobalInterceptor注解，checkLogin=true, checkAdmin=false
+2025-12-14 01:04:33 [nio-5050-exec-2] INFO  [com.itzpy.aspect.GlobalOperationAspect  ] [     checkLogin] 89 - 开始检查登录状态，checkAdmin=false
+2025-12-14 01:04:33 [nio-5050-exec-2] INFO  [com.itzpy.aspect.GlobalOperationAspect  ] [     checkLogin] 104 - 获取到token: 82352b3c7b6e1898a9fa88230c2af1f4
+2025-12-14 01:04:33 [nio-5050-exec-2] INFO  [com.itzpy.aspect.GlobalOperationAspect  ] [     checkLogin] 118 - 用户验证通过，userId: U44252223775
+2025-12-14 01:04:35 [nio-5050-exec-7] WARN  [springframework.web.servlet.PageNotFound] [ noHandlerFound] 1278 - No mapping for POST /api/group/getGroupInfo
+2025-12-14 01:04:35 [nio-5050-exec-7] ERROR [roller.AGlobalExceptionHandlerController] [handleException] 25 - 请求错误，请求地址http://127.0.0.1:5050/api/group/getGroupInfo,错误信息:
+org.springframework.web.servlet.NoHandlerFoundException: No handler found for POST /api/group/getGroupInfo
+	at org.springframework.web.servlet.DispatcherServlet.noHandlerFound(DispatcherServlet.java:1282)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1045)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:963)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:909)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:681)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:764)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:197)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:540)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:135)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:357)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:382)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:895)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1722)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:750)
+2025-12-14 01:04:39 [nio-5050-exec-8] WARN  [springframework.web.servlet.PageNotFound] [ noHandlerFound] 1278 - No mapping for POST /api/contact/loadContact
+2025-12-14 01:04:39 [nio-5050-exec-8] ERROR [roller.AGlobalExceptionHandlerController] [handleException] 25 - 请求错误，请求地址http://127.0.0.1:5050/api/contact/loadContact,错误信息:
+org.springframework.web.servlet.NoHandlerFoundException: No handler found for POST /api/contact/loadContact
+	at org.springframework.web.servlet.DispatcherServlet.noHandlerFound(DispatcherServlet.java:1282)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1045)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:963)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:909)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:681)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:764)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:197)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:540)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:135)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:357)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:382)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:895)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1722)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:750)
+2025-12-14 01:04:39 [nio-5050-exec-9] WARN  [springframework.web.servlet.PageNotFound] [ noHandlerFound] 1278 - No mapping for POST /api/contact/loadContact
+2025-12-14 01:04:39 [nio-5050-exec-9] ERROR [roller.AGlobalExceptionHandlerController] [handleException] 25 - 请求错误，请求地址http://127.0.0.1:5050/api/contact/loadContact,错误信息:
+org.springframework.web.servlet.NoHandlerFoundException: No handler found for POST /api/contact/loadContact
+	at org.springframework.web.servlet.DispatcherServlet.noHandlerFound(DispatcherServlet.java:1282)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1045)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:963)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:909)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:681)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:764)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:197)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:540)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:135)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:357)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:382)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:895)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1722)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:750)
+2025-12-14 01:05:02 [ionShutdownHook] INFO  [com.zaxxer.hikari.HikariDataSource      ] [          close] 350 - HikariCPDataSource - Shutdown initiated...
+2025-12-14 01:05:02 [ionShutdownHook] INFO  [com.zaxxer.hikari.HikariDataSource      ] [          close] 352 - HikariCPDataSource - Shutdown completed.

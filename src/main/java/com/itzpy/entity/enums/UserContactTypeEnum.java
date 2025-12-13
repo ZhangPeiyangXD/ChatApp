@@ -6,18 +6,18 @@ public enum UserContactTypeEnum {
     USER(0,"U","好友"),
     GROUP(1,"G","群");
 
-    private Integer code;
+    private Integer type;
     private String prefix;
     private String desc;
 
-    UserContactTypeEnum(Integer code, String prefix, String desc) {
-        this.code = code;
+    UserContactTypeEnum(Integer type, String prefix, String desc) {
+        this.type = type;
         this.prefix = prefix;
         this.desc = desc;
     }
 
-    public Integer getCode() {
-        return code;
+    public Integer getType() {
+        return type;
     }
 
     public String getPrefix() {

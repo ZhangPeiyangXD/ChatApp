@@ -11,13 +11,21 @@ import java.io.Serializable;
 public class SysSettingDto implements Serializable {
     private static final long serialVersionUID = 1L;
 
-    private Integer maxGroupAccount = 5;
+    // 个人最大创建的群组数量
+    private Integer maxGroupAccount = 50;
+    // 每个群组最大创建的群组成员数量
     private Integer maxGroupMemberAccount = 500;
+    // 图片文件上传最大限制
     private Integer maxImageSize = 2;
+    // 视频文件上传最大限制
     private Integer maxVideoSize = 5;
+    // 文件上传最大限制
     private Integer maxFileSize = 5;
+    // 机器人的UID
     private String robotUid = Constants.ROBOT_UID;
+    // 机器人昵称
     private String robotNickName = "easychat";
+    // 机器人欢迎语
     private String robotWelcome = "欢迎使用easychat！";
 
     public Integer getMaxGroupAccount() {
