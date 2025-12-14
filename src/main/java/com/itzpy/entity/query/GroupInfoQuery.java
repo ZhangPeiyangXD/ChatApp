@@ -51,6 +51,11 @@ public class GroupInfoQuery extends BaseParam {
 	 */
 	private Integer joinType;
 
+	/**
+	 * 状态 1:正常 0:解散
+	 */
+	private Integer status;
+
 
 	public void setGroupId(String groupId){
 		this.groupId = groupId;
@@ -145,6 +150,14 @@ public class GroupInfoQuery extends BaseParam {
 
 	public Integer getJoinType(){
 		return this.joinType;
+	}
+
+	public void setStatus(Integer status) {
+		this.status = status;
+	}
+
+	public Integer getStatus() {
+		return this.status;
 	}
 
 }

@@ -10,9 +10,7 @@ import javax.annotation.Resource;
 import com.itzpy.constant.Constants;
 import com.itzpy.entity.config.AppConfig;
 import com.itzpy.entity.dto.SysSettingDto;
-import com.itzpy.entity.enums.ResponseCodeEnum;
-import com.itzpy.entity.enums.UserContactStatusEnum;
-import com.itzpy.entity.enums.UserContactTypeEnum;
+import com.itzpy.entity.enums.*;
 import com.itzpy.entity.po.UserContact;
 import com.itzpy.entity.query.UserContactQuery;
 import com.itzpy.exception.BusinessException;
@@ -22,7 +20,6 @@ import com.itzpy.service.UserContactService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import com.itzpy.entity.enums.PageSize;
 import com.itzpy.entity.query.GroupInfoQuery;
 import com.itzpy.entity.po.GroupInfo;
 import com.itzpy.entity.vo.PaginationResultVO;
@@ -177,6 +174,7 @@ public class GroupInfoServiceImpl implements GroupInfoService {
 
             groupInfo.setCreateTime(curDate);
             groupInfo.setGroupId(StringTools.getGroupId());
+            groupInfo.setStatus(GroupStatusEnum.NORMAL.getStatus());
 
             this.groupInfoMapper.insert(groupInfo);
 

@@ -5,6 +5,7 @@ import java.util.Date;
 import com.itzpy.entity.enums.DateTimePatternEnum;
 import com.itzpy.utils.DateUtil;
 import com.fasterxml.jackson.annotation.JsonFormat;
+import lombok.Data;
 import org.springframework.format.annotation.DateTimeFormat;
 
 import java.io.Serializable;
@@ -13,6 +14,7 @@ import java.io.Serializable;
 /**
  * 联系人
  */
+@Data
 public class UserContact implements Serializable {
 
 
@@ -50,54 +52,8 @@ public class UserContact implements Serializable {
 	@DateTimeFormat(pattern = "yyyy-MM-dd HH:mm:ss")
 	private Date lastUpdateTime;
 
+    private String contactName;
 
-	public void setUserId(String userId){
-		this.userId = userId;
-	}
-
-	public String getUserId(){
-		return this.userId;
-	}
-
-	public void setContactId(String contactId){
-		this.contactId = contactId;
-	}
-
-	public String getContactId(){
-		return this.contactId;
-	}
-
-	public void setContactType(Integer contactType){
-		this.contactType = contactType;
-	}
-
-	public Integer getContactType(){
-		return this.contactType;
-	}
-
-	public void setCreateTime(Date createTime){
-		this.createTime = createTime;
-	}
-
-	public Date getCreateTime(){
-		return this.createTime;
-	}
-
-	public void setStatus(Integer status){
-		this.status = status;
-	}
-
-	public Integer getStatus(){
-		return this.status;
-	}
-
-	public void setLastUpdateTime(Date lastUpdateTime){
-		this.lastUpdateTime = lastUpdateTime;
-	}
-
-	public Date getLastUpdateTime(){
-		return this.lastUpdateTime;
-	}
 
 	@Override
 	public String toString (){

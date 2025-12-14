@@ -3,22 +3,15 @@ package com.itzpy.controller;
 
 import com.itzpy.annotation.GlobalInterceptor;
 import com.itzpy.constant.Constants;
-import com.itzpy.entity.dto.TokenUserInfoDto;
-import com.itzpy.entity.enums.BeautyAccountStatusEnum;
-import com.itzpy.entity.enums.BeautyAccountStatusEnum;
-import com.itzpy.entity.enums.JoinTypeEnum;
-import com.itzpy.entity.po.UserInfo;
 import com.itzpy.entity.vo.ResponseVO;
 import com.itzpy.entity.vo.UserInfoVo;
+import com.itzpy.entity.vo.CheckCodeVo;
 import com.itzpy.exception.BusinessException;
 import com.itzpy.redis.RedisComponent;
 import com.itzpy.redis.RedisUtils;
 import com.itzpy.service.UserInfoService;
-import com.itzpy.utils.CopyTools;
 import com.wf.captcha.ArithmeticCaptcha;
 import jdk.nashorn.internal.runtime.logging.Logger;
-import org.slf4j.LoggerFactory;
-import org.springframework.beans.BeanUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.validation.annotation.Validated;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -26,8 +19,6 @@ import org.springframework.web.bind.annotation.RestController;
 
 import javax.validation.constraints.Email;
 import javax.validation.constraints.NotEmpty;
-import java.util.HashMap;
-import java.util.Map;
 import java.util.UUID;
 
 @RestController("accountController")
@@ -62,9 +53,9 @@ public class AccountController extends ABaseController {
         String checkCodeBase64 = captcha.toBase64();
 
         //封装返回结果(验证码图片和验证码图片答案)
-        Map<String, String> result = new HashMap<>();
-        result.put("checkCode", checkCodeBase64);
-        result.put("checkCodeKey", checkCodeKey);
+        CheckCodeVo result = new CheckCodeVo();
+        result.setCheckCode(checkCodeBase64);
+        result.setCheckCodeKey(checkCodeKey);
 
         return getSuccessResponseVO(result);
     }

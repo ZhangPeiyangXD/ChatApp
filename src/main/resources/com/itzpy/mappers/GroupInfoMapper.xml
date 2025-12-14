@@ -17,13 +17,14 @@
 		<result column="group_notice" property="groupNotice"  />
 		<!--0:直接加入1:管理员同意后加入-->
 		<result column="join_type" property="joinType"  />
+		<!--状态  1:正常  0:解散-->
+		<result column="status" property="status"  />
 	</resultMap>
-
 
 	<!-- 通用查询结果列-->
 	<sql id="base_column_list">
 		 g.group_id,g.group_name,g.group_owner_id,g.create_time,g.group_notice,
-		 g.join_type
+		 g.join_type,g.status
 	</sql>
 
 	<sql id="base_condition_filed">
@@ -44,6 +45,9 @@
 			</if>
 			<if test="query.joinType != null">
 				 and  g.join_type = #{query.joinType}
+			</if>
+			<if test="query.status != null">
+				 and  g.status = #{query.status}
 			</if>
 	</sql>
 
@@ -110,6 +114,9 @@
 			<if test="bean.joinType != null">
 				 join_type,
 			</if>
+			<if test="bean.status != null">
+				 status,
+			</if>
 		 </trim>
 		 <trim prefix="values (" suffix=")" suffixOverrides="," >
 			<if test="bean.groupId!=null">
@@ -129,6 +136,9 @@
 			</if>
 			<if test="bean.joinType!=null">
 				 #{bean.joinType},
+			</if>
+			<if test="bean.status!=null">
+				 #{bean.status},
 			</if>
 		 </trim>
 	</insert>
@@ -155,6 +165,9 @@
 			<if test="bean.joinType != null">
 				 join_type,
 			</if>
+			<if test="bean.status != null">
+				 status,
+			</if>
 		 </trim>
 		 <trim prefix="values (" suffix=")" suffixOverrides=",">
 			<if test="bean.groupId!=null">
@@ -174,6 +187,9 @@
 			</if>
 			<if test="bean.joinType!=null">
 				 #{bean.joinType},
+			</if>
+			<if test="bean.status!=null">
+				 #{bean.status},
 			</if>
 		 </trim>
 		 on DUPLICATE key update 
@@ -196,6 +212,9 @@
 			<if test="bean.joinType!=null">
 				 join_type = VALUES(join_type),
 			</if>
+			<if test="bean.status!=null">
+				 status = VALUES(status),
+			</if>
 		 </trim>
 	</insert>
 
@@ -207,7 +226,8 @@
 			 group_owner_id,
 			 create_time,
 			 group_notice,
-			 join_type
+			 join_type,
+			 status
 		 )values
 		 <foreach collection="list" item="item" separator=",">
 			 (
@@ -216,7 +236,8 @@
 				 #{item.groupOwnerId},
 				 #{item.createTime},
 				 #{item.groupNotice},
-				 #{item.joinType}
+				 #{item.joinType},
+				 #{item.status}
 			 )
 		 </foreach>
 	</insert>
@@ -229,7 +250,8 @@
 			 group_owner_id,
 			 create_time,
 			 group_notice,
-			 join_type
+			 join_type,
+			 status
 		 )values
 		 <foreach collection="list" item="item" separator=",">
 			 (
@@ -238,7 +260,8 @@
 				 #{item.groupOwnerId},
 				 #{item.createTime},
 				 #{item.groupNotice},
-				 #{item.joinType}
+				 #{item.joinType},
+				 #{item.status}
 			 )
 		 </foreach>
 			on DUPLICATE key update 
@@ -247,7 +270,8 @@
 			group_owner_id = VALUES(group_owner_id),
 			create_time = VALUES(create_time),
 			group_notice = VALUES(group_notice),
-			join_type = VALUES(join_type)
+			join_type = VALUES(join_type),
+			status = VALUES(status)
 	</insert>
 
 	<!--多条件修改-->
@@ -271,6 +295,9 @@
 			</if>
 			<if test="bean.joinType != null">
 				 join_type = #{bean.joinType},
+			</if>
+			<if test="bean.status != null">
+				 status = #{bean.status},
 			</if>
  		 </set>
  		 <include refid="query_condition" />
@@ -300,6 +327,9 @@
 			</if>
 			<if test="bean.joinType != null">
 				 join_type = #{bean.joinType},
+			</if>
+			<if test="bean.status != null">
+				 status = #{bean.status},
 			</if>
  		 </set>
  		 where group_id=#{groupId}
